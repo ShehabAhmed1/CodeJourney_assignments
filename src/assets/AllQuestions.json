@@ -1,0 +1,195 @@
+{
+  "lec2": [
+    {
+      "id": 1,
+      "question": "Write a program that asks the user for his name and his father's name and print his fullname.",
+      "defaultCode": "a = input(\"First number: \")\nb = input(\"Second number: \")\nprint(a + b)",
+      "output": "First name: Shehab\nSecond name: Ahmed\nfullname: shehab Ahmed"
+    },
+    {
+      "id": 2,
+      "question": "What is the output of this code?",
+      "defaultCode": "x = \"123\"\nprint(type(x))",
+      "output": "str"
+    },
+    {
+      "id": 3,
+      "question": "Write a program that asks for the user's name and prints: 'Welcome, [name]'",
+      "defaultCode": "name = input(\"Enter your name: \")\nprint(\"Welcome,\", name)",
+      "output": "Enter your name: Ali\nWelcome, Ali"
+    },
+    {
+      "id": 4,
+      "question": "What is the output of this code?",
+      "defaultCode": "x = 10\nx = \"ten\"\nprint(type(x))",
+      "output": "<class 'str'>"
+    },
+    {
+      "id": 5,
+      "question": "Write a program that prints a greeting using a variable called `name`.",
+      "defaultCode": "name = \"Sara\"\nprint(\"Hello\", name)",
+      "output": "Hello Sara"
+    },
+    {
+      "id": 6,
+      "question": "What will be printed when the user enters: `Ali`?",
+      "defaultCode": "name = input(\"Enter your name: \")\nprint(\"Hi\", name + \"!\")",
+      "output": "Enter your name: Ali\nHi Ali!"
+    },
+    {
+      "id": 7,
+      "question": "Write a program that asks the user for their age and prints their age plus 5.",
+      "defaultCode": "age = int(input(\"Enter your age: \"))\nprint(\"In 5 years you will be\", age + 5)",
+      "output": "Enter your age: 20\nIn 5 years you will be 25"
+    },
+    {
+      "id": 8,
+      "question": "What is the output of this code?",
+      "defaultCode": "a = 5.0\nb = int(a)\nprint(type(b))",
+      "output": "<class 'int'>"
+    },
+    {
+      "id": 9,
+      "question": "Write a program that stores your favorite color in a variable and prints it.",
+      "defaultCode": "favorite_color = \"blue\"\nprint(\"My favorite color is\", favorite_color)",
+      "output": "My favorite color is blue"
+    },
+    {
+      "id": 10,
+      "question": "What is the output of this code?",
+      "defaultCode": "print(\"Hello\\nWorld\\n!\")",
+      "output": "Hello\nWorld\n!"
+    },
+    {
+      "id": 11,
+      "question": "➕ Simple math challenge:\n\n➡️ The user will enter two numbers, and the program will use a function to add them.\n",
+      "defaultCode": "def add_numbers(a, b):\n    return a + b\n\nprint(\"🔢 Add Two Numbers Using a Function\\n\")\n\nnum1 = float(input(\"Enter the first number: \"))\nnum2 = float(input(\"Enter the second number: \"))\n\nresult = add_numbers(num1, num2)\nprint(f\"\\n✅ The result is: {result}\")",
+      "output": "🔢 Add Two Numbers Using a Function\nEnter the first number: 5\nEnter the second number: 3\n\n✅ The result is: 8.0"
+    },
+    {
+      "id": 15,
+      "question": "Assignment4: 🎥 Create your YouTube Channel Idea\n\n➡️ Ask the user for their name and what their channel will be about. Then display a clean formatted message showing the channel concept.\n\n🎯 Concepts used:\n- Variables\n- input()\n- print()\n- f-strings\n- \\n",
+      "defaultCode": "print(\"🎬 Let’s build your YouTube channel idea!\\n\")\n\nname = input(\"Enter your name: \")\nabout = input(\"What is your channel about? \")\n\nchannel_info = f\"\"\"\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: {name}\nChannel Topic: {about}\n\n✅ Suggested Channel Name: '{about} with {name}'\n############################\n\"\"\"\n\nprint(channel_info)",
+      "output": "🎬 Let’s build your YouTube channel idea!\nEnter your name: Sara\nWhat is your channel about? Tech Reviews\n\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: Sara\nChannel Topic: Tech Reviews\n\n✅ Suggested Channel Name: 'Tech Reviews with Sara'\n############################"
+    },
+
+    {
+      "id": 13,
+      "question": "Assignment2: 📋 Build your personal profile:\n\n➡️ Enter your full name, city, and favorite programming language. The program will show a neat formatted profile.\n\n🎯 Concepts used:\n- Variables\n- input()\n- print()\n- f-strings\n- \\n\n- len()",
+      "defaultCode": "print(\"👤 Build your personal profile now!\\n\")\n\nname = input(\"Full name: \")\ncity = input(\"Your city: \")\nfav_lang = input(\"Favorite programming language: \")\n\nprofile = f\"\"\"\n===========================\n👤 USER PROFILE\n===========================\nName: {name}\nCity: {city}\nFavorite Language: {fav_lang}\nName Length: {len(name)} characters\n===========================\n\"\"\"\n\nprint(profile)",
+      "output": "👤 Build your personal profile now!\nFull name: Ali\nYour city: Cairo\nFavorite programming language: Python\n\n===========================\n👤 USER PROFILE\n===========================\nName: Ali\nCity: Cairo\nFavorite Language: Python\nName Length: 3 characters\n==========================="
+    },
+    {
+      "id": 14,
+      "question": "Assignment3: 📊 Calculate your study stats:\n\n➡️ Ask the user for their name, number of study hours per day, and how many days they study per week. Then, calculate the total study hours per week and display all the info in a clean report.\n\n🎯 Concepts used:\n- Variables\n- input()\n- print()\n- f-strings\n- \\n\n- int() and arithmetic operations",
+      "defaultCode": "print(\"📚 Let’s track your study habits!\\n\")\n\nname = input(\"What’s your name? \")\nhours_per_day = int(input(\"How many hours do you study each day? \"))\ndays_per_week = int(input(\"How many days do you study per week? \"))\n\ntotal_hours = hours_per_day * days_per_week\n\nreport = f\"\"\"\n===========================\n📊 STUDY REPORT\n===========================\nName: {name}\nDaily Study Hours: {hours_per_day}\nStudy Days/Week: {days_per_week}\nTotal Weekly Study Hours: {total_hours}\n===========================\n\"\"\"\n\nprint(report)",
+      "output": "📚 Let’s track your study habits!\nWhat’s your name? Omar\nHow many hours do you study each day? 3\nHow many days do you study per week? 5\n\n===========================\n📊 STUDY REPORT\n===========================\nName: Omar\nDaily Study Hours: 3\nStudy Days/Week: 5\nTotal Weekly Study Hours: 15\n==========================="
+    }
+  ],
+  "lec3": [
+    {
+      "id": 1,
+      "question": "The user enters two numbers. The program calculates and displays all operations (addition, subtraction, multiplication, division, etc.).?",
+      "defaultCode": "print(\"Welcome to the Mini Math Tool!\")\n\nnum1 = float(input(\"Enter the first number: \"))\nnum2 = float(input(\"Enter the second number: \"))\n\nprint(f\"\\nAddition: {num1} + {num2} = {num1 + num2}\")\nprint(f\"Subtraction: {num1} - {num2} = {num1 - num2}\")\nprint(f\"Multiplication: {num1} * {num2} = {num1 * num2}\")\nprint(f\"Division: {num1} / {num2} = {num1 / num2}\")\nprint(f\"Floor Division: {num1} // {num2} = {num1 // num2}\")\nprint(f\"Remainder: {num1} % {num2} = {num1 % num2}\")\nprint(f\"Power: {num1} ** {num2} = {num1 ** num2}\")",
+      "output": "Welcome to the Mini Math Tool!\nEnter the first number: 10\nEnter the second number: 5\n\nAddition: 10.0 + 5.0 = 15.0\nSubtraction: 10.0 - 5.0 = 5.0\nMultiplication: 10.0 * 5.0 = 50.0\nDivision: 10.0 / 5.0 = 2.0\nFloor Division: 10.0 // 5.0 = 2.0\nRemainder: 10.0 % 5.0 = 0.0\nPower: 10.0 ** 5.0 = 100000.0"
+    },
+    {
+      "id": 2,
+      "question": "The user enters a student’s name and grades for 3 subjects. The program calculates and shows the total and average?",
+      "defaultCode": "print(\"Student Grade Report Generator\")\n\nname = input(\"Student name: \")\nmath = float(input(\"Math grade: \"))\nscience = float(input(\"Science grade: \"))\nenglish = float(input(\"English grade: \"))\n\ntotal = math + science + english\naverage = total / 3\n\nprint(\"\\n===== Grade Report =====\")\nprint(f\"Name: {name}\")\nprint(f\"Total: {total}\")\nprint(f\"Average: {average}\")",
+      "output": "Student Grade Report Generator\nStudent name: Ahmed\nMath grade: 85\nScience grade: 90\nEnglish grade: 88\n\n===== Grade Report =====\nName: Ahmed\nTotal: 263.0\nAverage: 87.66666666666667"
+    },
+    {
+      "id": 3,
+      "question": "The user enters hours, minutes, and seconds. The program calculates the total time in seconds.?",
+      "defaultCode": "print(\"Time Converter - Convert hours, minutes, and seconds to total seconds\")\n\nhours = int(input(\"Enter hours: \"))\nminutes = int(input(\"Enter minutes: \"))\nseconds = int(input(\"Enter seconds: \"))\n\ntotal_seconds = hours * 3600 + minutes * 60 + seconds\n\nprint(f\"\\nTotal time in seconds: {total_seconds} seconds\")",
+      "output": "Time Converter - Convert hours, minutes, and seconds to total seconds\nEnter hours: 1\nEnter minutes: 30\nEnter seconds: 45\n\nTotal time in seconds: 5445 seconds"
+    },
+    {
+      "id": 4,
+      "question": "The user enters 3 exam scores. The program calculates and prints the total and average.",
+      "defaultCode": "print(\"Student Score Calculator\")\n\nscore1 = float(input(\"Enter score 1: \"))\nscore2 = float(input(\"Enter score 2: \"))\nscore3 = float(input(\"Enter score 3: \"))\n\ntotal = score1 + score2 + score3\naverage = total / 3\n\nprint(\"\\n===== Result =====\")\nprint(f\"Total: {total}\")\nprint(f\"Average: {average}\")",
+      "output": "Student Score Calculator\nEnter score 1: 85\nEnter score 2: 90\nEnter score 3: 95\n\n===== Result =====\nTotal: 270.0\nAverage: 90.0"
+    },
+    {
+      "id": 5,
+      "question": "The user enters their name and birth year. The program calculates and prints their age (based on 2025).",
+      "defaultCode": "print(\"Age Calculator\")\n\nname = input(\"Enter your name: \")\nbirth_year = int(input(\"Enter your birth year: \"))\n\ncurrent_year = 2025\nage = current_year - birth_year\n\nprint(f\"\\n{name}, your age in {current_year} is: {age} years\")",
+      "output": "Age Calculator\nEnter your name: Sara\nEnter your birth year: 2005\n\nSara, your age in 2025 is: 20 years"
+    },
+    {
+      "id": 6,
+      "question": "The user enters the width and height of a rectangle. The program calculates and prints the area and perimeter.",
+      "defaultCode": "print(\"Rectangle Area & Perimeter Calculator\")\n\nwidth = float(input(\"Enter the width: \"))\nheight = float(input(\"Enter the height: \"))\n\narea = width * height\nperimeter = 2 * (width + height)\n\nprint(\"\\n===== Rectangle Info =====\")\nprint(f\"Area: {area}\")\nprint(f\"Perimeter: {perimeter}\")",
+      "output": "Rectangle Area & Perimeter Calculator\nEnter the width: 5\nEnter the height: 3\n\n===== Rectangle Info =====\nArea: 15.0\nPerimeter: 16.0"
+    },
+    {
+      "id": 7,
+      "question": "The user enters two numbers. The program prints the result of raising the first number to the power of the second.",
+      "defaultCode": "print(\"Power Calculator\")\n\nbase = float(input(\"Enter the base number: \"))\nexponent = float(input(\"Enter the exponent: \"))\n\nresult = base ** exponent\n\nprint(f\"\\n{base} raised to the power of {exponent} is: {result}\")",
+      "output": "Power Calculator\nEnter the base number: 2\nEnter the exponent: 4\n\n2.0 raised to the power of 4.0 is: 16.0"
+    },
+    {
+      "id": 8,
+      "question": " Assignment 1: Personal Information Card : The user enters their name, age, city, and hobby. The program prints a formatted personal info card.",
+      "defaultCode": "print(\"Create Your Personal Info Card\")\n\nname = input(\"Enter your name: \")\nage = input(\"Enter your age: \")\ncity = input(\"Enter your city: \")\nhobby = input(\"Enter your favorite hobby: \")\n\nprint(\"\\n===== Personal Info Card =====\")\nprint(f\"Name : {name}\")\nprint(f\"Age  : {age}\")\nprint(f\"City : {city}\")\nprint(f\"Hobby: {hobby}\")",
+      "output": "Create Your Personal Info Card\nEnter your name: Ali\nEnter your age: 18\nEnter your city: Cairo\nEnter your favorite hobby: Reading\n\n===== Personal Info Card =====\nName : Ali\nAge  : 18\nCity : Cairo\nHobby: Reading"
+    },
+    {
+      "id": 9,
+      "question": "Assignment 2: Simple Bill Calculator : The user enters the prices of 3 items. The program calculates and prints the total bill.",
+      "defaultCode": "print(\"Simple Shopping Bill Calculator\")\n\nitem1 = float(input(\"Enter price of item 1: \"))\nitem2 = float(input(\"Enter price of item 2: \"))\nitem3 = float(input(\"Enter price of item 3: \"))\n\ntotal = item1 + item2 + item3\n\nprint(\"\\n===== Bill Summary =====\")\nprint(f\"Total amount to pay: {total} EGP\")",
+      "output": "Simple Shopping Bill Calculator\nEnter price of item 1: 25.5\nEnter price of item 2: 40\nEnter price of item 3: 10.5\n\n===== Bill Summary =====\nTotal amount to pay: 76.0 EGP"
+    },
+    {
+      "id": 10,
+      "question": " Assignment 3: Seconds Breakdown Tool : The user enters total seconds. The program calculates how many minutes and seconds that is.",
+      "defaultCode": "print(\"Convert total seconds to minutes and seconds\")\n\ntotal_seconds = int(input(\"Enter total seconds: \"))\n\nminutes = total_seconds // 60\nseconds = total_seconds % 60\n\nprint(f\"\\n{total_seconds} seconds is equal to:\")\nprint(f\"{minutes} minutes and {seconds} seconds\")",
+      "output": "Convert total seconds to minutes and seconds\nEnter total seconds: 125\n\n125 seconds is equal to:\n2 minutes and 5 seconds"
+    }
+  ],
+  "lec4": [
+    {
+      "id": 1,
+      "question": "The program asks the user to enter a number and prints whether it is positive.",
+      "defaultCode": "num = int(input(\"Enter a number: \"))\n\nif num > 0:\n    print(\"Positive number\")",
+      "output": "Enter a number: 4\nPositive number"
+    },
+    {
+      "id": 2,
+      "question": "The program checks if the entered number is even or odd .",
+      "defaultCode": "num = int(input(\"Enter a number: \"))\n\nif num % 2 == 0:\n    print(\"Even number\")\nelse:\n    print(\"Odd number\")",
+      "output": "Enter a number: 3\nOdd number"
+    },
+    {
+      "id": 3,
+      "question": "The user enters a password. If it's too short (< 6), too long (> 12), or contains '123', the program rejects it.",
+      "defaultCode": "password = input(\"Enter a password: \")\n\nif len(password) < 6:\n    print(\"Password too short\")\nelif len(password) > 12:\n    print(\"Password too long\")\nelif \"123\" in password:\n    print(\"Password too weak (contains 123)\")\nelse:\n    print(\"Password accepted\")",
+      "output": "Enter a password: abc123\nPassword too weak (contains 123)"
+    },
+    {
+      "id": 4,
+      "question": "The user enters a number from 1 to 5. The program responds with a matching emoji and message about their day.",
+      "defaultCode": "rating = int(input(\"How was your day from 1 to 5? ⭐: \"))\n\nif rating == 5:\n    print(\"🌟 Awesome! You're shining!\")\nelif rating == 4:\n    print(\"😊 Great! Keep going.\")\nelif rating == 3:\n    print(\"😐 Not bad, tomorrow is a new chance.\")\nelif rating == 2:\n    print(\"😕 Hmm, rough day. Take it easy.\")\nelif rating == 1:\n    print(\"💤 Tough day... rest and recharge.\")\nelse:\n    print(\"❌ Invalid rating! Please choose from 1 to 5.\")",
+      "output": "How was your day from 1 to 5? ⭐: 4\n😊 Great! Keep going."
+    },
+    {
+      "id": 5,
+      "question": "The user tries to guess a secret number between 1 and 10. The program gives feedback with emojis based on the guess.",
+      "defaultCode": "import random\n\nsecret = random.randint(1, 10)\nguess = int(input(\"🎯 Guess a number between 1 and 10: \"))\n\nif guess == secret:\n    print(\"🎉 Correct! You're a genius!\")\nelif abs(guess - secret) == 1:\n    print(\"🔥 So close! Just one off.\")\nelse:\n    print(f\"❌ Nope! The correct number was {secret}. Try again.\")",
+      "output": "🎯 Guess a number between 1 and 10: 7\n🔥 So close! Just one off."
+    },
+    {
+      "id": 6,
+      "question": "A simple quiz with 3 questions. The score is calculated, and the program responds with an emoji-based message.",
+      "defaultCode": "score = 0\n\nprint(\"🧠 Welcome to the Smart Check!\\nAnswer these questions:\")\n\nq1 = input(\"1. What color is the sky on a clear day? \").lower()\nif q1 == \"blue\":\n    score += 1\n\nq2 = input(\"2. How many legs does a spider have? \")\nif q2 == \"8\":\n    score += 1\n\nq3 = input(\"3. What’s 5 * 3? \")\nif q3 == \"15\":\n    score += 1\n\nprint(f\"\\n🎓 Your score: {score}/3\")\n\nif score == 3:\n    print(\"🏆 Genius! You're amazing!\")\nelif score == 2:\n    print(\"👍 Good job! Almost perfect.\")\nelif score == 1:\n    print(\"🙂 Not bad! Try again.\")\nelse:\n    print(\"😅 Oops... better luck next time.\")",
+      "output": "🧠 Welcome to the Smart Check!\nAnswer these questions:\n1. What color is the sky on a clear day? blue\n2. How many legs does a spider have? 8\n3. What’s 5 * 3? 15\n\n🎓 Your score: 3/3\n🏆 Genius! You're amazing!"
+    },
+    {
+      "id": 7,
+      "question": "🧭 You are lost in a mysterious forest. You must make the right decisions to escape:\n\n➡️ First choice:\n- If you type 'left':\n  - You find a quiet trail and a small cabin 🏡.\n  - If you 'enter' the cabin:\n    - You find a map and flashlight 🗺️🔦 and escape the forest. 🎉 YOU WIN!\n  - If you choose to 'keep walking':\n    - You get lost deeper in the forest. 😢 GAME OVER\n\n- If you type 'right':\n  - You reach a river with a broken bridge 🌉.\n  - If you try to 'cross':\n    - The bridge collapses and you fall. 🐊 GAME OVER\n  - If you look for another 'way':\n    - You find a shallow path and cross safely. 🏞️ A rescue team saves you. 🚁 YOU WIN!\n\n- If you type anything else:\n  - You hesitate too long and night falls 🌙. You're stuck forever. GAME OVER",
+      "defaultCode": "print(\"🌲 Welcome to Mystery Forest Adventure!\\n\")\nprint(\"You find yourself lost in a mysterious forest... 🧭\")\n\nchoice1 = input(\n    \"You see two paths. Do you go 'left' or 'right'? ➡️  : \").lower()\nif choice1 == \"left\":\n  print(\"\\nYou walk along a quiet trail and find a small cabin. 🏡\")\n  choice2 = input(\n      \"\\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : \").lower()\n  if choice2 == \"enter\":\n    print(\"\\nInside, you find a map and a flashlight! 🗺️🔦\")\n    print(\"\\nYou follow the map and safely escape the forest. 🎉 YOU WIN!\")\n  else:\n    print(\n        \"\\nYou keep walking but get lost deeper in the forest... 😢 GAME OVER\")\nelif choice1 == \"right\":\n  print(\"\\nYou reach a river with a rickety bridge. 🌉\")\n  choice3 = input(\n      \"\\nDo you try to 'cross' or look for another 'way'? 🤔  : \").lower()\n  if choice3 == \"cross\":\n    print(\"\\nThe bridge breaks! You fall into the water... 🐊 GAME OVER\")\n  else:\n    print(\"\\nYou find a shallow spot and cross safely. 🏞️\")\n    print(\"\\nOn the other side, you see a rescue team. 🚁 YOU WIN!\")\nelse:\n  print(\n      \"\\nYou hesitate too long and night falls... 🌙 You’re stuck forever. GAME OVER\"\n  )",
+      "output": "🌲 Welcome to Mystery Forest Adventure!\nYou find yourself lost in a mysterious forest... 🧭\nYou see two paths. Do you go 'left' or 'right'? ➡️  : left\n\nYou walk along a quiet trail and find a small cabin. 🏡\n\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : enter\n\nInside, you find a map and a flashlight! 🗺️🔦\n\nYou follow the map and safely escape the forest. 🎉 YOU WIN!"
+    }
+  ]
+}

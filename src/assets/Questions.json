@@ -1,0 +1,85 @@
+{
+  "lec2": [
+    {
+      "id": 1,
+      "question": "اكتب برنامج يطلب من المستخدم إدخال اسمه واسم والده، ثم يطبع الاسم الكامل.",
+      "defaultCode": "a = input(\"First number: \")\nb = input(\"Second number: \")\nprint(a + b)",
+      "output": "First name: Shehab\nSecond name: Ahmed\nfullname: shehab Ahmed"
+    },
+    {
+      "id": 2,
+      "question": "اكتب برنامج يطبع رسالة ترحيب باستخدام متغير باسم `name`.",
+      "defaultCode": "name = \"Sara\"\nprint(\"Hello\", name)",
+      "output": "Hello Sara"
+    },
+
+    {
+      "id": 3,
+      "question": "اكتب برنامج يخزن لونك المفضل في متغير ثم يطبعه.",
+      "defaultCode": "favorite_color = \"blue\"\nprint(\"My favorite color is\", favorite_color)",
+      "output": "My favorite color is blue"
+    },
+    {
+      "id": 4,
+      "question": "🎥 أنشئ فكرة لقناة يوتيوب:\n\n➡️ اطلب من المستخدم إدخال اسمه وموضوع قناته، ثم اعرض رسالة منسقة توضح فكرة القناة.",
+      "defaultCode": "print(\"🎬 Let’s build your YouTube channel idea!\\n\")\n\nname = input(\"Enter your name: \")\nabout = input(\"What is your channel about? \")\n\nchannel_info = f\"\"\"\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: {name}\nChannel Topic: {about}\n\n✅ Suggested Channel Name: '{about} with {name}'\n############################\n\"\"\"\n\nprint(channel_info)",
+      "output": "🎬 Let’s build your YouTube channel idea!\nEnter your name: Sara\nWhat is your channel about? Tech Reviews\n\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: Sara\nChannel Topic: Tech Reviews\n\n✅ Suggested Channel Name: 'Tech Reviews with Sara'\n############################"
+    },
+    {
+      "id": 5,
+      "question": "📋 أنشئ ملفك الشخصي:\n\n➡️ اطلب من المستخدم إدخال اسمه الكامل، مدينته، ولغته البرمجية المفضلة. ثم اعرض ملفًا منسقًا يحتوي على هذه البيانات.",
+      "defaultCode": "print(\"👤 Build your personal profile now!\\n\")\n\nname = input(\"Full name: \")\ncity = input(\"Your city: \")\nfav_lang = input(\"Favorite programming language: \")\n\nprofile = f\"\"\"\n===========================\n👤 USER PROFILE\n===========================\nName: {name}\nCity: {city}\nFavorite Language: {fav_lang}\nName Length: {len(name)} characters\n===========================\n\"\"\"\n\nprint(profile)",
+      "output": "👤 Build your personal profile now!\nFull name: Ali\nYour city: Cairo\nFavorite programming language: Python\n\n===========================\n👤 USER PROFILE\n===========================\nName: Ali\nCity: Cairo\nFavorite Language: Python\nName Length: 3 characters\n==========================="
+    }
+  ],
+  "lec5": [
+    {
+      "id": 1,
+      "question": " إنشاء برنامج يتحقق مما إذا كان الشخص منضمًا إلى \"مجموعة العزف على البانجو\" بناءً على الحرف الأول من اسمه. إذا بدأ الاسم بحرف \"R\" أو \"r\"، يُعتبر الشخص منضمًا إلى مجموعة العزف على البانجو.\n يطلب البرنامج من المستخدم إدخال اسمه، وإذا كان الاسم يبدأ بحرف \"R\" أو \"r\"، يعرض البرنامج: name + \" plays banjo\"، وإذا لم يبدأ بهذه الحروف، يعرض البرنامج: name + \" does not play banjo\". الاسم المدخل سيكون دائمًا نصًا صحيحًا.",
+      "defaultCode": "name = input(\"Enter your name: \")\n\nif name.startswith('R') or name.startswith('r'):\n    print(name + \" plays banjo\")\nelse:\n    print(name + \" does not play banjo\")",
+      "output": "Enter your name: Rami\nRami plays banjo"
+    },
+    {
+      "id": 2,
+      "question": "يطلب البرنامج من المستخدم إدخال قيمة منطقية (true/false) ويطبع 'Yes' إذا كانت True، أو 'No' إذا كانت False.",
+      "defaultCode": "value = input(\"Enter a boolean value (true/false): \").lower()\n\nif value == 'true':\n    print(\"Yes\")\nelse:\n    print(\"No\")",
+      "output": "Enter a boolean value (true/false): true\nYes"
+    },
+    {
+      "id": 3,
+      "question": "يطلب البرنامج من المستخدم إدخال المبلغ الإجمالي للفاتورة وعدد الأشخاص، ثم يحسب كم سيدفع كل شخص مع تقريب النتيجة إلى منزلتين عشريتين. إذا كان عدد الأشخاص يساوي 0، يطبع البرنامج رسالة: 'Number of people cannot be zero.'",
+      "defaultCode": "total_bill = float(input(\"Enter the total bill amount: \"))\npeople_count = int(input(\"Enter the number of people: \"))\n\nif people_count == 0:\n    print(\"Number of people cannot be zero.\")\nelse:\n    amount_per_person = total_bill / people_count\n    print(f\"Each person should pay: {amount_per_person:.2f}\")",
+      "output": "Enter the total bill amount: 120\nEnter the number of people: 4\nEach person should pay: 30.00"
+    },
+    {
+      "id": 4,
+      "question": "يطلب البرنامج من المستخدم إدخال كلمة مرور، ثم يفحص إذا كان طول كلمة المرور أكبر من 12 وتحتوي علي كلم code، يطبع 'Strong password'، وإلا يطبع 'Weak password'.",
+      "defaultCode": "password = input(\"Enter your password: \")\n\nif len(password) > 12 and \"code\" in password:\n    print(\"Strong password\")\nelse:\n    print(\"Weak password\")",
+      "output": "Enter your password: #codeJourney1#\nStrong password"
+    },
+    {
+      "id": 5,
+      "question": "يطلب البرنامج من المستخدم إدخال كلمة، ثم يطبع عدد الحروف، وأول حرف، وآخر حرف من الكلمة.",
+      "defaultCode": "word = input(\"Enter a word: \")\nlength = len(word)\nfirst_letter = word[0]\nlast_letter = word[-1]\nprint(f\"The word has {length} characters.\")\nprint(f\"First letter: {first_letter}\")\nprint(f\"Last letter: {last_letter}\")",
+      "output": "Enter a word: Python\nThe word has 6 characters.\nFirst letter: P\nLast letter: n"
+    },
+    {
+      "id": 6,
+      "question": "📊 احسب إحصائيات دراستك:\n\n➡️ اطلب من المستخدم إدخال اسمه، وعدد ساعات الدراسة في اليوم، وعدد أيام الدراسة في الأسبوع. ثم احسب إجمالي ساعات الدراسة في الأسبوع واعرض تقريرًا منسقًا.",
+      "defaultCode": "print(\"📚 Let’s track your study habits!\\n\")\n\nname = input(\"What’s your name? \")\nhours_per_day = int(input(\"How many hours do you study each day? \"))\ndays_per_week = int(input(\"How many days do you study per week? \"))\n\ntotal_hours = hours_per_day * days_per_week\n\nreport = f\"\"\"\n===========================\n📊 STUDY REPORT\n===========================\nName: {name}\nDaily Study Hours: {hours_per_day}\nStudy Days/Week: {days_per_week}\nTotal Weekly Study Hours: {total_hours}\n===========================\n\"\"\"\n\nprint(report)",
+      "output": "📚 Let’s track your study habits!\nWhat’s your name? Omar\nHow many hours do you study each day? 3\nHow many days do you study per week? 5\n\n===========================\n📊 STUDY REPORT\n===========================\nName: Omar\nDaily Study Hours: 3\nStudy Days/Week: 5\nTotal Weekly Study Hours: 15\n==========================="
+    },
+    {
+      "id": 7,
+      "question": "A simple quiz with 3 questions. The score is calculated, and the program responds with an emoji-based message.",
+      "defaultCode": "score = 0\n\nprint(\"🧠 Welcome to the Smart Check!\\nAnswer these questions:\")\n\nq1 = input(\"1. What color is the sky on a clear day? \").lower()\nif q1 == \"blue\":\n    score += 1\n\nq2 = input(\"2. How many legs does a spider have? \")\nif q2 == \"8\":\n    score += 1\n\nq3 = input(\"3. What’s 5 * 3? \")\nif q3 == \"15\":\n    score += 1\n\nprint(f\"\\n🎓 Your score: {score}/3\")\n\nif score == 3:\n    print(\"🏆 Genius! You're amazing!\")\nelif score == 2:\n    print(\"👍 Good job! Almost perfect.\")\nelif score == 1:\n    print(\"🙂 Not bad! Try again.\")\nelse:\n    print(\"😅 Oops... better luck next time.\")",
+      "output": "🧠 Welcome to the Smart Check!\nAnswer these questions:\n1. What color is the sky on a clear day? blue\n2. How many legs does a spider have? 8\n3. What’s 5 * 3? 15\n\n🎓 Your score: 3/3\n🏆 Genius! You're amazing!"
+    },
+    {
+      "id": 8,
+      "question": "🧭 أنت تائهٌ في غابةٍ غامضة. عليك اتخاذ القرارات الصحيحة لتتمكن من الخروج:\n\n➡️ الاختيار الأول:\n- إذا كتبت 'يسار':\n  - تجد ممرًا هادئًا وكوخًا صغيرًا 🏡.\n  - إذا 'دخلت' الكوخ:\n    - تجد خريطةً وكشافًا 🗺️🔦 وتنجح في الخروج من الغابة. 🎉 أنت فزت!\n  - إذا اخترت أن 'تستمر في المشي':\n    - تضيع أعمق داخل الغابة. 😢 نهاية اللعبة\n\n- إذا كتبت 'يمين':\n  - تصل إلى نهر وعلى جسرٍ مكسور 🌉.\n  - إذا حاولت 'العبور':\n    - ينهار الجسر وتسقط. 🐊 نهاية اللعبة\n  - إذا بحثت عن 'طريق' آخر:\n    - تجد ممرًا ضحلًا وتمر بأمان. 🏞️ فريق إنقاذ ينقذك. 🚁 أنت فزت!\n\n- إذا كتبت أي شيء آخر:\n  - تتردد وقتًا طويلاً ويحِلّ الليل 🌙؛ فتظل عالقًا إلى الأبد. نهاية اللعبة",
+      "defaultCode": "print(\"🌲 Welcome to Mystery Forest Adventure!\\n\")\nprint(\"You find yourself lost in a mysterious forest... 🧭\")\n\nchoice1 = input(\n    \"You see two paths. Do you go 'left' or 'right'? ➡️  : \").lower()\nif choice1 == \"left\":\n  print(\"\\nYou walk along a quiet trail and find a small cabin. 🏡\")\n  choice2 = input(\n      \"\\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : \").lower()\n  if choice2 == \"enter\":\n    print(\"\\nInside, you find a map and a flashlight! 🗺️🔦\")\n    print(\"\\nYou follow the map and safely escape the forest. 🎉 YOU WIN!\")\n  else:\n    print(\n        \"\\nYou keep walking but get lost deeper in the forest... 😢 GAME OVER\")\nelif choice1 == \"right\":\n  print(\"\\nYou reach a river with a rickety bridge. 🌉\")\n  choice3 = input(\n      \"\\nDo you try to 'cross' or look for another 'way'? 🤔  : \").lower()\n  if choice3 == \"cross\":\n    print(\"\\nThe bridge breaks! You fall into the water... 🐊 GAME OVER\")\n  else:\n    print(\"\\nYou find a shallow spot and cross safely. 🏞️\")\n    print(\"\\nOn the other side, you see a rescue team. 🚁 YOU WIN!\")\nelse:\n  print(\n      \"\\nYou hesitate too long and night falls... 🌙 You’re stuck forever. GAME OVER\"\n  )",
+      "output": "🌲 Welcome to Mystery Forest Adventure!\nYou find yourself lost in a mysterious forest... 🧭\nYou see two paths. Do you go 'left' or 'right'? ➡️  : left\n\nYou walk along a quiet trail and find a small cabin. 🏡\n\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : enter\n\nInside, you find a map and a flashlight! 🗺️🔦\n\nYou follow the map and safely escape the forest. 🎉 YOU WIN!"
+    }
+  ]
+}
