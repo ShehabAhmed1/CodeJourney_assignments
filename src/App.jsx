@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, Code, CheckCircle, X } from "lucide-react";
 import { Sparkles } from "lucide-react";
 import logo from "./assets/logo_light.png"; // Assuming you have a logo.svg file
@@ -17,6 +17,9 @@ const App = () => {
     setShowAnswer(true);
     setId((prev) => (prev.includes(id) ? prev : [...prev, id]));
   };
+  useEffect(() => {
+    setId([]);
+  }, questions);
   return (
     <div className="min-h-screen bg-gray-900 pb-8  ">
       <div className="main-container">
@@ -138,7 +141,7 @@ const App = () => {
                       className=" hover:bg-green-500 cursor-pointer font-bold bg-blue-500 text-white px-4 py-2 rounded-md my-8"
                     >
                       {" "}
-                      show answer{" "}
+                      show Example{" "}
                     </button>
                   </div>
                 </div>
