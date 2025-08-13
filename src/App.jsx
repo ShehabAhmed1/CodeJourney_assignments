@@ -10,7 +10,7 @@ const App = () => {
   const [id, setId] = useState([]);
   const [showsider, setShowSider] = useState(false);
   // Sample questions
-  const [questions, setQuestions] = useState(allquestions["lec2"]);
+  const [questions, setQuestions] = useState(allquestions["lec1"]);
   const [currentQuestion, setCurrentQuestion] = useState(questions[0]); // Initialize with the first question
 
   const handleShowAnswer = (id) => {
@@ -79,8 +79,8 @@ const App = () => {
                       </span>
                     </div>
                     <p
-                      className="text-gray-600 mt-4 text-2xl italic text-right"
-                      dir="rtl"
+                      className="text-gray-600 mt-4 text-2xl text-left"
+                      dir="ltr"
                     >
                       {" "}
                       {breakLine(currentQuestion.question)}
