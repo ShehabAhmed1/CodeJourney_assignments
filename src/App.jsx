@@ -112,29 +112,29 @@ const App = () => {
                     </div>
 
                     {/* Code Editor Section */}
-
-                    {/* <div className="bg-white rounded-xl shadow-sm p-4 mt-6">
-                        <div className="flex items-center justify-between mb-4">
-                          <div className="flex items-center gap-2">
-                            <Code className="w-5 min-h-5 text-green-600" />
-                            <h2 className="text-xl font-semibold text-gray-800">
-                              Code Editor
-                            </h2>
-                          </div>
+                    {/* 
+                    <div className="bg-white rounded-xl shadow-sm p-4 mt-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="flex items-center gap-2">
+                          <Code className="w-5 min-h-5 text-green-600" />
+                          <h2 className="text-xl font-semibold text-gray-800">
+                            Code Editor
+                          </h2>
                         </div>
+                      </div>
 
-                        <div className="relative">
-                          <pre
-                            className={`hover:text-black active:text-black ${
-                              showAnswer && id.includes(currentQuestion.id)
-                                ? "text-black"
-                                : "text-white"
-                            } text-left w-full min-h-48 p-2 cursor-pointer border whitespace-pre-wrap break-words border-gray-300 rounded-lg font-mono text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none`}
-                          >
-                            {currentQuestion.defaultCode}
-                          </pre>
-                        </div>
-                      </div> */}
+                      <div className="relative">
+                        <pre
+                          className={`hover:text-black active:text-black ${
+                            showAnswer && id.includes(currentQuestion.id)
+                              ? "text-black"
+                              : "text-white"
+                          } text-left w-full min-h-48 p-2 cursor-pointer border whitespace-pre-wrap break-words border-gray-300 rounded-lg font-mono text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none`}
+                        >
+                          {currentQuestion.defaultCode}
+                        </pre>
+                      </div>
+                    </div> */}
 
                     <button
                       onClick={() => handleShowAnswer(currentQuestion.id)}

@@ -31,7 +31,7 @@
       "output": "👤 Build your personal profile now!\nFull name: Ali\nYour city: Cairo\nFavorite programming language: Python\n\n===========================\n👤 USER PROFILE\n===========================\nName: Ali\nCity: Cairo\nFavorite Language: Python\nName Length: 3 characters\n==========================="
     }
   ],
-  "lec4": [
+  "lec3": [
     {
       "id": 1,
       "question": "🎸 **Banjo Playing Group Checker**\n\nWrite a program that checks if a person belongs to the 'banjo playing group' based on the first letter of their name.\n\n**Rules:**\n- If the name starts with `R` or `r`, they play banjo.\n- Otherwise, they do not.\n\n**Input:**\n- A string (person's name).\n\n**Output:**\n- `<name> plays banjo` OR `<name> does not play banjo`",
@@ -87,7 +87,7 @@
       "output": "🌲 Welcome to Mystery Forest Adventure!\nYou find yourself lost in a mysterious forest... 🧭\nYou see two paths. Do you go 'left' or 'right'? ➡️  : left\n\nYou walk along a quiet trail and find a small cabin. 🏡\n\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : enter\n\nInside, you find a map and a flashlight! 🗺️🔦\n\nYou follow the map and safely escape the forest. 🎉 YOU WIN!"
     }
   ],
-  "lec5": [
+  "lec4": [
     {
       "id": 1,
       "question": "🎲 **Random Number in Range**\n\nYour task is to write a program that asks the user for two integers representing a range (inclusive). Then generate and print a random number between them using `random.randint()`.\n\n**Input:**\n- Two integers (start and end).\n\n**Output:**\n- A random integer between the given numbers (inclusive).\n\n**Example:**\n```\nInput:\n5\n10\nOutput:\n7\n```",
@@ -96,9 +96,9 @@
     },
     {
       "id": 2,
-      "question": "🔐 **Simple Random Password**\n\nCreate a program that generates a password containing **6 random English letters** (both uppercase and lowercase) using `string.ascii_letters` and `random.choice()`.\n\n**Input:**\n- No input required from the user.\n\n**Output:**\n- A string of 6 random letters.\n\n**Example:**\n```\nOutput:\naZbYcD\n```",
-      "defaultCode": "import random\nimport string\n\npassword = ''.join(random.choice(string.ascii_letters) for _ in range(6))\nprint(password)",
-      "output": "aZbYcD"
+      "question": "🛠 **Comprehensive List Operations**\n\nCreate a Python program that demonstrates several common list operations in a connected scenario:\n\n1. Start with a list of numbers: `[3, 1, 2]`.\n2. Append the number **4** to the end of the list using `.append()`.\n3. Insert the number **10** at index **1** using `.insert()`.\n4. Remove the number **3** from the list using `.remove()`.\n5. Remove the last element from the list using `.pop()`.\n6. Sort the list in ascending order using `.sort()`.\n7. Reverse the list order using `.reverse()`.\n8. Find the index of the number **2** using `.index()`.\n9. Count how many times the number **1** appears using `.count()`.\n\nAfter each operation, print the list (or the result where appropriate).\n\n**Input:**\n- No input from the user (use the given numbers for demonstration).\n\n**Output:**\n- Show the list after each operation, plus the results of `.index()` and `.count()`.\n\n**Example Output:**\n```\nInitial list: [3, 1, 2]\nAfter append 4: [3, 1, 2, 4]\nAfter insert 10 at index 1: [3, 10, 1, 2, 4]\nAfter remove 3: [10, 1, 2, 4]\nAfter pop last element: [10, 1, 2]\nAfter sort ascending: [1, 2, 10]\nAfter reverse order: [10, 2, 1]\nIndex of 2: 1\nCount of 1: 1\n```",
+      "defaultCode": "nums = [3, 1, 2]\nprint('Initial list:', nums)\n\nnums.append(4)\nprint('After append 4:', nums)\n\nnums.insert(1, 10)\nprint('After insert 10 at index 1:', nums)\n\nnums.remove(3)\nprint('After remove 3:', nums)\n\nnums.pop()\nprint('After pop last element:', nums)\n\nnums.sort()\nprint('After sort ascending:', nums)\n\nnums.reverse()\nprint('After reverse order:', nums)\n\nprint('Index of 2:', nums.index(2))\nprint('Count of 1:', nums.count(1))",
+      "output": "Initial list: [3, 1, 2]\nAfter append 4: [3, 1, 2, 4]\nAfter insert 10 at index 1: [3, 10, 1, 2, 4]\nAfter remove 3: [10, 1, 2, 4]\nAfter pop last element: [10, 1, 2]\nAfter sort ascending: [1, 2, 10]\nAfter reverse order: [10, 2, 1]\nIndex of 2: 1\nCount of 1: 1"
     },
     {
       "id": 3,
@@ -108,75 +108,35 @@
     },
     {
       "id": 4,
-      "question": "🛒 **Shopping List Manager**\n\nWrite a program that manages a shopping list. The program should allow the user to:\n- Add items\n- Remove items\n- Sort the list\n- Show all items\n- Quit the program\n\n**Input:**\n- Commands: `add`, `remove`, `sort`, `show`, `quit`.\n\n**Output:**\n- Shopping list after each action.\n\n**Example:**\n```\nInput:\nadd\nBread\nshow\nOutput:\n['Bread']\n```",
-      "defaultCode": "shopping_list = []\n\nwhile True:\n    choice = input(\"Choose: add / remove / sort / show / quit: \").lower()\n    if choice == 'add':\n        item = input(\"Enter item: \")\n        shopping_list.append(item)\n    elif choice == 'remove':\n        item = input(\"Enter item to remove: \")\n        if item in shopping_list:\n            shopping_list.remove(item)\n    elif choice == 'sort':\n        shopping_list.sort()\n    elif choice == 'show':\n        print(shopping_list)\n    elif choice == 'quit':\n        break",
-      "output": "Choose: add / remove / sort / show / quit: add\nEnter item: Bread\nChoose: show\n['Bread']"
-    },
-    {
-      "id": 5,
+
       "question": "🔄 **Shuffle Word Letters**\n\nWrite a program that asks the user for a single word, then randomly shuffles its letters using `random.shuffle()`.\n\n**Input:**\n- A single word.\n\n**Output:**\n- The same letters but in a random order.\n\n**Example:**\n```\nInput:\nPython\nOutput:\nnothPy\n```",
       "defaultCode": "import random\n\nword = list(input(\"Enter a word: \"))\nrandom.shuffle(word)\nprint(''.join(word))",
       "output": "Enter a word: Python\nnothPy"
     },
+
     {
-      "id": 6,
-      "question": "💪 **Strong Random Password**\n\nWrite a program that asks the user for the length of a password, then generates a strong password containing:\n- Uppercase letters\n- Lowercase letters\n- Numbers\n- Special characters\n\n**Input:**\n- An integer representing password length.\n\n**Output:**\n- A random password of the given length.\n\n**Example:**\n```\nInput:\n6\nOutput:\nA7@c!P\n```",
-      "defaultCode": "import random\nimport string\n\nlength = int(input(\"Enter password length: \"))\nchars = string.ascii_letters + string.digits + string.punctuation\npassword = ''.join(random.choice(chars) for _ in range(length))\nprint(password)",
-      "output": "A7@c!P"
-    },
-    {
-      "id": 7,
-      "question": "🎮 **Number Guessing Game**\n\nThe computer chooses a random number between 1 and 100. The user must guess the number.\n- If the guess is higher than the number, print `Lower`.\n- If the guess is lower than the number, print `Higher`.\n- Continue until the correct number is guessed.\n\n**Input:**\n- Integer guesses.\n\n**Output:**\n- `Higher` or `Lower` hints, and the winning message.\n\n**Example:**\n```\nInput:\n50\nHigher\n75\nLower\n65\nOutput:\nCorrect! The number is 65\n```",
-      "defaultCode": "import random\n\nnumber = random.randint(1, 100)\nwhile True:\n    guess = int(input(\"Guess the number: \"))\n    if guess > number:\n        print(\"Lower\")\n    elif guess < number:\n        print(\"Higher\")\n    else:\n        print(\"Correct! The number is\", number)\n        break",
-      "output": "Guess the number: 50\nHigher\nGuess the number: 75\nLower\nGuess the number: 65\nCorrect! The number is 65"
-    },
-    {
-      "id": 8,
+      "id": 5,
       "question": "📐 **Square Root Calculator**\n\nWrite a program that asks the user for a number, then calculates and prints its square root using `math.sqrt()`.\n\n**Input:**\n- A float or integer.\n\n**Output:**\n- The square root of the number.\n\n**Example:**\n```\nInput:\n16\nOutput:\n4.0\n```",
       "defaultCode": "import math\n\nnum = float(input(\"Enter a number: \"))\nprint(\"Square root:\", math.sqrt(num))",
       "output": "Enter a number: 16\nSquare root: 4.0"
     },
     {
-      "id": 9,
+      "id": 6,
       "question": "👥 **First and Last Friend**\n\nCreate a list containing 3 friends' names, then print:\n1. The first friend in the list.\n2. The last friend in the list.\n\n**Input:**\n- No input from the user.\n\n**Output:**\n- First and last names from the list.\n\n**Example:**\n```\nOutput:\nAhmed\nSara\n```",
       "defaultCode": "friends = ['Ahmed', 'Mona', 'Sara']\nprint(friends[0])\nprint(friends[-1])",
       "output": "Ahmed\nSara"
     },
     {
-      "id": 10,
-      "question": "➕ **Append Number to List**\n\nCreate a list of numbers, then append a new number to the end of the list using `.append()`.\n\n**Input:**\n- No input from the user.\n\n**Output:**\n- Updated list with the new number at the end.\n\n**Example:**\n```\nOutput:\n[1, 2, 3, 4]\n```",
-      "defaultCode": "nums = [1, 2, 3]\nnums.append(4)\nprint(nums)",
-      "output": "[1, 2, 3, 4]"
+      "id": 7,
+      "question": "🔐 **Simple Random Password**\n\nCreate a program that generates a password containing **6 random English letters** (both uppercase and lowercase) using `string.ascii_letters` and `random.choice()`.\n\n**Input:**\n- No input required from the user.\n\n**Output:**\n- A string of 6 random letters.\n\n**Example:**\n```\nOutput:\naZbYcD\n```",
+      "defaultCode": "import random\nimport string\n\npassword = ''.join(random.choice(string.ascii_letters) for _ in range(6))\nprint(password)",
+      "output": "aZbYcD"
     },
     {
-      "id": 11,
-      "question": "🧮 **Sum of Five Numbers**\n\nWrite a program that asks the user to enter 5 integers, stores them in a list, and then prints their sum.\n\n**Input:**\n- 5 integers.\n\n**Output:**\n- The sum of the entered numbers.\n\n**Example:**\n```\nInput:\n2\n4\n3\n1\n5\nOutput:\n15\n```",
-      "defaultCode": "nums = []\nfor _ in range(5):\n    nums.append(int(input(\"Enter a number: \")))\nprint(\"Sum:\", sum(nums))",
-      "output": "Enter a number: 2\nEnter a number: 4\nEnter a number: 3\nEnter a number: 1\nEnter a number: 5\nSum: 15"
-    },
-    {
-      "id": 12,
-      "question": "🔍 **Count Digits in String**\n\nWrite a program that asks the user for a string, then counts how many characters in the string are digits using `string.digits`.\n\n**Input:**\n- A string.\n\n**Output:**\n- Integer count of digits in the string.\n\n**Example:**\n```\nInput:\nhi123\nOutput:\n3\n```",
-      "defaultCode": "import string\n\ntext = input(\"Enter text: \")\ncount = sum(1 for char in text if char in string.digits)\nprint(\"Digits count:\", count)",
-      "output": "Enter text: hi123\nDigits count: 3"
-    },
-    {
-      "id": 13,
-      "question": "🔄 **Reverse Number List**\n\nWrite a program that asks the user for a list of integers separated by spaces, then reverses the list using `.reverse()`.\n\n**Input:**\n- A list of integers separated by spaces.\n\n**Output:**\n- The list reversed.\n\n**Example:**\n```\nInput:\n1 2 3 4\nOutput:\n[4, 3, 2, 1]\n```",
-      "defaultCode": "nums = list(map(int, input(\"Enter numbers separated by space: \").split()))\nnums.reverse()\nprint(nums)",
-      "output": "Enter numbers separated by space: 1 2 3 4\n[4, 3, 2, 1]"
-    },
-    {
-      "id": 14,
-      "question": "🚫 **Remove Duplicates from List**\n\nWrite a program that asks the user for a list of integers separated by spaces, then removes duplicate values and prints the unique numbers.\n\n**Input:**\n- A list of integers separated by spaces.\n\n**Output:**\n- A list of unique integers.\n\n**Example:**\n```\nInput:\n1 2 2 3 3 4\nOutput:\n[1, 2, 3, 4]\n```",
-      "defaultCode": "nums = list(map(int, input(\"Enter numbers separated by space: \").split()))\nunique_nums = list(set(nums))\nprint(unique_nums)",
-      "output": "Enter numbers separated by space: 1 2 2 3 3 4\n[1, 2, 3, 4]"
-    },
-    {
-      "id": 15,
-      "question": "🔐 **Random Password from User Text**\n\nWrite a program that asks the user for a string, then creates a random password of length 8 using only characters from the given string.\n\n**Input:**\n- A string.\n\n**Output:**\n- A random 8-character password.\n\n**Example:**\n```\nInput:\nPython\nOutput:\nhtnPyoPy\n```",
-      "defaultCode": "import random\n\ntext = input(\"Enter text: \")\npassword = ''.join(random.choice(text) for _ in range(8))\nprint(password)",
-      "output": "Enter text: Python\nhtnPyoPy"
+      "id": 8,
+      "question": "💪 **Strong Random Password**\n\nWrite a program that asks the user for the length of a password, then generates a strong password containing:\n- Uppercase letters\n- Lowercase letters\n- Numbers\n- Special characters\n\n**Input:**\n- An integer representing password length.\n\n**Output:**\n- A random password of the given length.\n\n**Example:**\n```\nInput:\n6\nOutput:\nA7@c!P\n```",
+      "defaultCode": "import random\nimport string\n\nlength = int(input(\"Enter password length: \"))\nchars = string.ascii_letters + string.digits + string.punctuation\npassword = ''.join(random.choice(chars) for _ in range(length))\nprint(password)",
+      "output": "A7@c!P"
     }
   ]
 }
