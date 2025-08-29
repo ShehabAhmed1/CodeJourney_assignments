@@ -158,5 +158,49 @@
       "defaultCode": "customer_name = input(\"Enter customer name: \")\n\n# Items (no loops)\nitem1 = input(\"Enter first item name: \")\nprice1 = float(input(f\"Enter price for {item1}: \"))\n\nitem2 = input(\"Enter second item name: \")\nprice2 = float(input(f\"Enter price for {item2}: \"))\n\nitem3 = input(\"Enter third item name: \")\nprice3 = float(input(f\"Enter price for {item3}: \"))\n\n# Calculations\nsubtotal = price1 + price2 + price3\ntax = subtotal * 0.1\nservice = subtotal * 0.05\ntotal = subtotal + tax + service\n\n# Print invoice\nprint(\"\\n\" + \"=\" * 40)\nprint(\" \" * 12 + \"🍽 RESTAURANT BILL 🍽\")\nprint(\"=\" * 40)\nprint(f\"👤 Customer: {customer_name}\")\nprint(\"-\" * 40)\nprint(f\"{item1:<20} {price1:>10.2f} $\")\nprint(f\"{item2:<20} {price2:>10.2f} $\")\nprint(f\"{item3:<20} {price3:>10.2f} $\")\nprint(\"-\" * 40)\nprint(f\"{'Subtotal':<20} {subtotal:>10.2f} $\")\nprint(f\"{'Tax (10%)':<20} {tax:>10.2f} $\")\nprint(f\"{'Service (5%)':<20} {service:>10.2f} $\")\nprint(\"=\" * 40)\nprint(f\"{'TOTAL':<20} {total:>10.2f} $\")\nprint(\"=\" * 40)\nprint(\" \" * 10 + \"✅ Thank you for dining with us!\")\nprint(\"=\" * 40)",
       "output": "Enter customer name: Ahmed\nEnter first item name: Pizza\nEnter price for Pizza: 120\nEnter second item name: Burger\nEnter price for Burger: 80\nEnter third item name: Juice\nEnter price for Juice: 30\n\n========================================\n        🍽 RESTAURANT BILL 🍽\n========================================\n👤 Customer: Ahmed\n----------------------------------------\nPizza                     120.00 $\nBurger                     80.00 $\nJuice                      30.00 $\n----------------------------------------\nSubtotal                  230.00 $\nTax (10%)                  23.00 $\nService (5%)               11.50 $\n========================================\nTOTAL                     264.50 $\n========================================\n✅ Thank you for dining with us!\n========================================"
     }
+  ],
+  "lec6": [
+    {
+      "id": 1,
+      "question": "📝✅ **Multiplication Table (for loop)**\n\nYour task is to write a program that prints the multiplication table for a number entered by the user.\n\n1. Ask the user to enter a number.\n2. Use a **for loop** to print the multiplication table from 1 to 10.\n\n**Input:**\n- An integer number.\n\n**Output:**\n- Multiplication table from 1 to 10.",
+      "defaultCode": "num = int(input(\"Enter a number: \"))\n\nprint(f\"Multiplication Table of {num}\")\nfor i in range(1, 11):\n    print(f\"{num} x {i} = {num * i}\")",
+      "output": "Enter a number: 5\nMultiplication Table of 5\n5 x 1 = 5\n5 x 2 = 10\n5 x 3 = 15\n...\n5 x 10 = 50"
+    },
+    {
+      "id": 2,
+      "question": "📝✅ **Sum of List (for loop)**\n\nYour task is to write a program that calculates the sum of numbers in a list.\n\n1. Ask the user to enter numbers separated by spaces.\n2. Use a **for loop** to calculate the total sum.\n\n**Input:**\n- List of integers.\n\n**Output:**\n- Print the sum of the numbers.",
+      "defaultCode": "numbers = input(\"Enter numbers separated by spaces: \").split()\nnumbers = [int(n) for n in numbers]\n\ntotal = 0\nfor n in numbers:\n    total += n\n\nprint(\"Sum:\", total)",
+      "output": "Enter numbers separated by spaces: 3 5 7 2\nSum: 17"
+    },
+    {
+      "id": 3,
+      "question": "📝✅ **Countdown Timer (while loop)**\n\nYour task is to write a program that simulates a countdown.\n\n1. Ask the user for a starting number.\n2. Use a **while loop** to count down to 0.\n3. Print 'Time’s up!' at the end.\n\n**Input:**\n- Integer number.\n\n**Output:**\n- Countdown printed line by line.",
+      "defaultCode": "num = int(input(\"Enter a starting number: \"))\n\nwhile num >= 0:\n    print(num)\n    num -= 1\n\nprint(\"⏰ Time's up!\")",
+      "output": "Enter a starting number: 5\n5\n4\n3\n2\n1\n0\n⏰ Time's up!"
+    },
+    {
+      "id": 4,
+      "question": "📝✅ **Guessing Game (while loop)**\n\nYour task is to write a program where the computer selects a random number between 1 and 10, and the user has to guess it.\n\n1. Keep asking until the user guesses correctly.\n2. Print a message if the guess is too high or too low.\n\n**Input:**\n- Integer guess from user.\n\n**Output:**\n- Messages guiding the user until they win.",
+      "defaultCode": "import random\nsecret = random.randint(1, 10)\n\nwhile True:\n    guess = int(input(\"Guess a number between 1 and 10: \"))\n    if guess == secret:\n        print(\"🎉 Correct! You guessed it!\")\n        break\n    elif guess < secret:\n        print(\"Too low, try again!\")\n    else:\n        print(\"Too high, try again!\")",
+      "output": "Guess a number between 1 and 10: 3\nToo low, try again!\nGuess a number between 1 and 10: 8\nToo high, try again!\nGuess a number between 1 and 10: 5\n🎉 Correct! You guessed it!"
+    },
+    {
+      "id": 5,
+      "question": "📝✅ **Triangle Pattern (nested loop)**\n\nYour task is to print a triangle of stars using nested for loops.\n\n1. Ask the user for the number of rows.\n2. Print a triangle like this if input is 5:\n*\n**\n***\n****\n*****\n\n**Input:**\n- Integer number (rows).\n\n**Output:**\n- Triangle pattern.",
+      "defaultCode": "rows = int(input(\"Enter number of rows: \"))\n\nfor i in range(1, rows + 1):\n    for j in range(i):\n        print(\"*\", end=\"\")\n    print()",
+      "output": "Enter number of rows: 5\n*\n**\n***\n****\n*****"
+    },
+    {
+      "id": 6,
+      "question": "📝✅ **Multiplication Table Grid (nested loop)**\n\nYour task is to generate a multiplication table grid using nested loops.\n\n1. Use a nested loop to print the table from 1 × 1 up to 10 × 10.\n2. Format it in a grid style.\n\n**Input:**\n- No input needed.\n\n**Output:**\n- A full multiplication table (1 to 10).",
+      "defaultCode": "for i in range(1, 11):\n    for j in range(1, 11):\n        print(f\"{i*j:3}\", end=\" \")\n    print()",
+      "output": "1*1=1\n1*2=2\n1*3=3\n...\n 2*1=2\n 2*2=4\n 2*3=6\n..."
+    },
+    {
+      "id": 7,
+      "question": "📝✅ **Task Manager Program**\n\nYour task is to write a program that manages a list of tasks with the following features:\n\n1. Show all tasks with their index numbers.\n2. Add a new task to the list.\n3. Delete a task by entering its number.\n4. Search for a task by keyword (case-insensitive).\n5. Edit an existing task by entering its number and the new value.\n6. Exit the program.\n\n**Input:**\n- User choice from the menu (1–6).\n- Strings for new or edited tasks.\n- Numbers for delete/edit operations.\n\n**Output:**\n- Displayed menu.\n- Tasks list with indexes.\n- Messages for successful add, edit, delete, or error if invalid input.\n- Search result message if found or not.\n",
+      "defaultCode": "tasks = []\n\nwhile True:\n    print(\"\\n=== Task Manager ===\")\n    print(\"1. Show Tasks\")\n    print(\"2. Add Task\")\n    print(\"3. Delete Task\")\n    print(\"4. Search Task\")\n    print(\"5. Edit Task\")\n    print(\"6. Exit\")\n\n    choice = input(\"Choose an option: \")\n\n    if choice == '1':\n        if not tasks:\n            print(\"📭 No tasks available\")\n        else:\n            for i, task in enumerate(tasks, start=1):\n                print(f\"{i}. {task}\")\n\n    elif choice == '2':\n        new_task = input(\"Enter a new task: \")\n        tasks.append(new_task)\n        print(\"✅ Task added successfully\")\n\n    elif choice == '3':\n        del_index = int(input(\"Enter the task number to delete: \")) - 1\n        if 0 <= del_index < len(tasks):\n            removed = tasks.pop(del_index)\n            print(f\"🗑️ Task deleted: {removed}\")\n        else:\n            print(\"❌ Invalid number\")\n\n    elif choice == '4':\n        search = input(\"Enter the task name to search: \")\n        found = False\n        for task in tasks:\n            if search.lower() in task.lower():\n                print(f\"🔍 Task found: {task}\")\n                found = True\n                break\n        if not found:\n            print(\"🚫 Task not found\")\n\n    elif choice == '5':\n        edit_index = int(input(\"Enter the task number to edit: \")) - 1\n        if 0 <= edit_index < len(tasks):\n            new_value = input(\"Enter the new task: \")\n            tasks[edit_index] = new_value\n            print(\"✏️ Task updated successfully\")\n        else:\n            print(\"❌ Invalid number\")\n\n    elif choice == '6':\n        print(\"👋 Exiting the program...\")\n        break\n\n    else:\n        print(\"⚠️ Invalid choice, please try again\")",
+      "output": "=== Task Manager ===\n1. Show Tasks\n2. Add Task\n3. Delete Task\n4. Search Task\n5. Edit Task\n6. Exit\n\nChoose an option: 2\nEnter a new task: Study React\n✅ Task added successfully\n\nChoose an option: 1\n1. Study React\n\nChoose an option: 4\nEnter the task name to search: react\n🔍 Task found: Study React\n\nChoose an option: 5\nEnter the task number to edit: 1\nEnter the new task: Study Python\n✏️ Task updated successfully\n\nChoose an option: 1\n1. Study Python\n\nChoose an option: 6\n👋 Exiting the program..."
+    }
   ]
 }
