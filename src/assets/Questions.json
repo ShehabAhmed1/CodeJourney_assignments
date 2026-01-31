@@ -2,38 +2,6 @@
   "lec1": [
     {
       "id": 1,
-      "question": "Write a program that asks the user to enter their first name and their father's name, then prints the full name.",
-      "defaultCode": "a = input(\"First name: \")\nb = input(\"Second name: \")\nprint(a + \" \" + b)",
-      "output": "First name: Shehab\nSecond name: Ahmed\nfullname: Shehab Ahmed"
-    },
-    {
-      "id": 2,
-      "question": "Write a program that prints a welcome message using a variable named `name`.",
-      "defaultCode": "name = \"Sara\"\nprint(\"Hello\", name)",
-      "output": "Hello Sara"
-    },
-    {
-      "id": 3,
-      "question": "Write a program that stores your favorite color in a variable, then prints it.",
-      "defaultCode": "favorite_color = \"blue\"\nprint(\"My favorite color is\", favorite_color)",
-      "output": "My favorite color is blue"
-    },
-    {
-      "id": 4,
-      "question": "🎥 Create a YouTube channel idea:\n\n➡️ Ask the user to enter their name and the topic of their channel, then display a formatted message showing the channel idea.",
-      "defaultCode": "print(\"🎬 Let’s build your YouTube channel idea!\\n\")\n\nname = input(\"Enter your name: \")\nabout = input(\"What is your channel about? \")\n\nchannel_info = f\"\"\"\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: {name}\nChannel Topic: {about}\n\n✅ Suggested Channel Name: '{about} with {name}'\n############################\n\"\"\"\n\nprint(channel_info)",
-      "output": "🎬 Let’s build your YouTube channel idea!\nEnter your name: Sara\nWhat is your channel about? Tech Reviews\n\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: Sara\nChannel Topic: Tech Reviews\n\n✅ Suggested Channel Name: 'Tech Reviews with Sara'\n############################"
-    },
-    {
-      "id": 5,
-      "question": "📋 Create your personal profile:\n\n➡️ Ask the user to enter their full name, city, and favorite programming language. Then display a formatted profile containing these details.",
-      "defaultCode": "print(\"👤 Build your personal profile now!\\n\")\n\nname = input(\"Full name: \")\ncity = input(\"Your city: \")\nfav_lang = input(\"Favorite programming language: \")\n\nprofile = f\"\"\"\n===========================\n👤 USER PROFILE\n===========================\nName: {name}\nCity: {city}\nFavorite Language: {fav_lang}\nName Length: {len(name)} characters\n===========================\n\"\"\"\n\nprint(profile)",
-      "output": "👤 Build your personal profile now!\nFull name: Ali\nYour city: Cairo\nFavorite programming language: Python\n\n===========================\n👤 USER PROFILE\n===========================\nName: Ali\nCity: Cairo\nFavorite Language: Python\nName Length: 3 characters\n==========================="
-    }
-  ],
-  "lec2": [
-    {
-      "id": 1,
       "topic": "flowchart",
       "question": "Draw a flowchart that asks the user to enter a username and password, then prints 'Welcome' if both are correct, otherwise prints 'Try again'.",
       "defaultCode": "",
