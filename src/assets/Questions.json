@@ -106,6 +106,13 @@
       "question": "Is age = \"20\" a number or text? Explain.",
       "defaultCode": "age = \"20\"",
       "output": "...."
+    },
+    {
+      "id": 16,
+      "topic": "flowchart",
+      "question": "Choose a real-life situation from your daily life (for example: studying, waking up, charging your phone, waiting for the bus). Draw a flowchart for this situation. Your flowchart must include at least one condition (decision) and one loop (repetition).",
+      "defaultCode": "",
+      "output": "The flowchart should include:\n- Start and End\n- Input (if needed)\n- Decision (Yes/No)\n- Loop (repetition until a condition is met)"
     }
   ]
 }
