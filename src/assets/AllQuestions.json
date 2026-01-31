@@ -1,195 +1,250 @@
 {
-  "lec2": [
+  "lec1": [
     {
       "id": 1,
-      "question": "Write a program that asks the user for his name and his father's name and print his fullname.",
-      "defaultCode": "a = input(\"First number: \")\nb = input(\"Second number: \")\nprint(a + b)",
-      "output": "First name: Shehab\nSecond name: Ahmed\nfullname: shehab Ahmed"
+      "question": "Write a program that asks the user to enter their first name and their father's name, then prints the full name.",
+      "defaultCode": "a = input(\"First name: \")\nb = input(\"Second name: \")\nprint(a + \" \" + b)",
+      "output": "First name: Shehab\nSecond name: Ahmed\nfullname: Shehab Ahmed"
     },
     {
       "id": 2,
-      "question": "What is the output of this code?",
-      "defaultCode": "x = \"123\"\nprint(type(x))",
-      "output": "str"
-    },
-    {
-      "id": 3,
-      "question": "Write a program that asks for the user's name and prints: 'Welcome, [name]'",
-      "defaultCode": "name = input(\"Enter your name: \")\nprint(\"Welcome,\", name)",
-      "output": "Enter your name: Ali\nWelcome, Ali"
-    },
-    {
-      "id": 4,
-      "question": "What is the output of this code?",
-      "defaultCode": "x = 10\nx = \"ten\"\nprint(type(x))",
-      "output": "<class 'str'>"
-    },
-    {
-      "id": 5,
-      "question": "Write a program that prints a greeting using a variable called `name`.",
+      "question": "Write a program that prints a welcome message using a variable named `name`.",
       "defaultCode": "name = \"Sara\"\nprint(\"Hello\", name)",
       "output": "Hello Sara"
     },
     {
-      "id": 6,
-      "question": "What will be printed when the user enters: `Ali`?",
-      "defaultCode": "name = input(\"Enter your name: \")\nprint(\"Hi\", name + \"!\")",
-      "output": "Enter your name: Ali\nHi Ali!"
-    },
-    {
-      "id": 7,
-      "question": "Write a program that asks the user for their age and prints their age plus 5.",
-      "defaultCode": "age = int(input(\"Enter your age: \"))\nprint(\"In 5 years you will be\", age + 5)",
-      "output": "Enter your age: 20\nIn 5 years you will be 25"
-    },
-    {
-      "id": 8,
-      "question": "What is the output of this code?",
-      "defaultCode": "a = 5.0\nb = int(a)\nprint(type(b))",
-      "output": "<class 'int'>"
-    },
-    {
-      "id": 9,
-      "question": "Write a program that stores your favorite color in a variable and prints it.",
+      "id": 3,
+      "question": "Write a program that stores your favorite color in a variable, then prints it.",
       "defaultCode": "favorite_color = \"blue\"\nprint(\"My favorite color is\", favorite_color)",
       "output": "My favorite color is blue"
     },
     {
-      "id": 10,
-      "question": "What is the output of this code?",
-      "defaultCode": "print(\"Hello\\nWorld\\n!\")",
-      "output": "Hello\nWorld\n!"
-    },
-    {
-      "id": 11,
-      "question": "➕ Simple math challenge:\n\n➡️ The user will enter two numbers, and the program will use a function to add them.\n",
-      "defaultCode": "def add_numbers(a, b):\n    return a + b\n\nprint(\"🔢 Add Two Numbers Using a Function\\n\")\n\nnum1 = float(input(\"Enter the first number: \"))\nnum2 = float(input(\"Enter the second number: \"))\n\nresult = add_numbers(num1, num2)\nprint(f\"\\n✅ The result is: {result}\")",
-      "output": "🔢 Add Two Numbers Using a Function\nEnter the first number: 5\nEnter the second number: 3\n\n✅ The result is: 8.0"
-    },
-    {
-      "id": 15,
-      "question": "Assignment4: 🎥 Create your YouTube Channel Idea\n\n➡️ Ask the user for their name and what their channel will be about. Then display a clean formatted message showing the channel concept.\n\n🎯 Concepts used:\n- Variables\n- input()\n- print()\n- f-strings\n- \\n",
+      "id": 4,
+      "question": "🎥 Create a YouTube channel idea:\n\n➡️ Ask the user to enter their name and the topic of their channel, then display a formatted message showing the channel idea.",
       "defaultCode": "print(\"🎬 Let’s build your YouTube channel idea!\\n\")\n\nname = input(\"Enter your name: \")\nabout = input(\"What is your channel about? \")\n\nchannel_info = f\"\"\"\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: {name}\nChannel Topic: {about}\n\n✅ Suggested Channel Name: '{about} with {name}'\n############################\n\"\"\"\n\nprint(channel_info)",
       "output": "🎬 Let’s build your YouTube channel idea!\nEnter your name: Sara\nWhat is your channel about? Tech Reviews\n\n############################\n🎥 YOUTUBE CHANNEL PROFILE\n############################\nCreator Name: Sara\nChannel Topic: Tech Reviews\n\n✅ Suggested Channel Name: 'Tech Reviews with Sara'\n############################"
     },
-
     {
-      "id": 13,
-      "question": "Assignment2: 📋 Build your personal profile:\n\n➡️ Enter your full name, city, and favorite programming language. The program will show a neat formatted profile.\n\n🎯 Concepts used:\n- Variables\n- input()\n- print()\n- f-strings\n- \\n\n- len()",
+      "id": 5,
+      "question": "📋 Create your personal profile:\n\n➡️ Ask the user to enter their full name, city, and favorite programming language. Then display a formatted profile containing these details.",
       "defaultCode": "print(\"👤 Build your personal profile now!\\n\")\n\nname = input(\"Full name: \")\ncity = input(\"Your city: \")\nfav_lang = input(\"Favorite programming language: \")\n\nprofile = f\"\"\"\n===========================\n👤 USER PROFILE\n===========================\nName: {name}\nCity: {city}\nFavorite Language: {fav_lang}\nName Length: {len(name)} characters\n===========================\n\"\"\"\n\nprint(profile)",
       "output": "👤 Build your personal profile now!\nFull name: Ali\nYour city: Cairo\nFavorite programming language: Python\n\n===========================\n👤 USER PROFILE\n===========================\nName: Ali\nCity: Cairo\nFavorite Language: Python\nName Length: 3 characters\n==========================="
-    },
-    {
-      "id": 14,
-      "question": "Assignment3: 📊 Calculate your study stats:\n\n➡️ Ask the user for their name, number of study hours per day, and how many days they study per week. Then, calculate the total study hours per week and display all the info in a clean report.\n\n🎯 Concepts used:\n- Variables\n- input()\n- print()\n- f-strings\n- \\n\n- int() and arithmetic operations",
-      "defaultCode": "print(\"📚 Let’s track your study habits!\\n\")\n\nname = input(\"What’s your name? \")\nhours_per_day = int(input(\"How many hours do you study each day? \"))\ndays_per_week = int(input(\"How many days do you study per week? \"))\n\ntotal_hours = hours_per_day * days_per_week\n\nreport = f\"\"\"\n===========================\n📊 STUDY REPORT\n===========================\nName: {name}\nDaily Study Hours: {hours_per_day}\nStudy Days/Week: {days_per_week}\nTotal Weekly Study Hours: {total_hours}\n===========================\n\"\"\"\n\nprint(report)",
-      "output": "📚 Let’s track your study habits!\nWhat’s your name? Omar\nHow many hours do you study each day? 3\nHow many days do you study per week? 5\n\n===========================\n📊 STUDY REPORT\n===========================\nName: Omar\nDaily Study Hours: 3\nStudy Days/Week: 5\nTotal Weekly Study Hours: 15\n==========================="
     }
   ],
   "lec3": [
     {
       "id": 1,
-      "question": "The user enters two numbers. The program calculates and displays all operations (addition, subtraction, multiplication, division, etc.).?",
-      "defaultCode": "print(\"Welcome to the Mini Math Tool!\")\n\nnum1 = float(input(\"Enter the first number: \"))\nnum2 = float(input(\"Enter the second number: \"))\n\nprint(f\"\\nAddition: {num1} + {num2} = {num1 + num2}\")\nprint(f\"Subtraction: {num1} - {num2} = {num1 - num2}\")\nprint(f\"Multiplication: {num1} * {num2} = {num1 * num2}\")\nprint(f\"Division: {num1} / {num2} = {num1 / num2}\")\nprint(f\"Floor Division: {num1} // {num2} = {num1 // num2}\")\nprint(f\"Remainder: {num1} % {num2} = {num1 % num2}\")\nprint(f\"Power: {num1} ** {num2} = {num1 ** num2}\")",
-      "output": "Welcome to the Mini Math Tool!\nEnter the first number: 10\nEnter the second number: 5\n\nAddition: 10.0 + 5.0 = 15.0\nSubtraction: 10.0 - 5.0 = 5.0\nMultiplication: 10.0 * 5.0 = 50.0\nDivision: 10.0 / 5.0 = 2.0\nFloor Division: 10.0 // 5.0 = 2.0\nRemainder: 10.0 % 5.0 = 0.0\nPower: 10.0 ** 5.0 = 100000.0"
+      "question": "🎸 **Banjo Playing Group Checker**\n\nWrite a program that checks if a person belongs to the 'banjo playing group' based on the first letter of their name.\n\n**Rules:**\n- If the name starts with `R` or `r`, they play banjo.\n- Otherwise, they do not.\n\n**Input:**\n- A string (person's name).\n\n**Output:**\n- `<name> plays banjo` OR `<name> does not play banjo`",
+      "defaultCode": "name = input(\"Enter your name: \")\n\nif name.startswith('R') or name.startswith('r'):\n    print(name + \" plays banjo\")\nelse:\n    print(name + \" does not play banjo\")",
+      "output": "Enter your name: Rami\nRami plays banjo"
     },
     {
       "id": 2,
-      "question": "The user enters a student’s name and grades for 3 subjects. The program calculates and shows the total and average?",
-      "defaultCode": "print(\"Student Grade Report Generator\")\n\nname = input(\"Student name: \")\nmath = float(input(\"Math grade: \"))\nscience = float(input(\"Science grade: \"))\nenglish = float(input(\"English grade: \"))\n\ntotal = math + science + english\naverage = total / 3\n\nprint(\"\\n===== Grade Report =====\")\nprint(f\"Name: {name}\")\nprint(f\"Total: {total}\")\nprint(f\"Average: {average}\")",
-      "output": "Student Grade Report Generator\nStudent name: Ahmed\nMath grade: 85\nScience grade: 90\nEnglish grade: 88\n\n===== Grade Report =====\nName: Ahmed\nTotal: 263.0\nAverage: 87.66666666666667"
+      "question": "✅ **Boolean Value Checker**\n\nWrite a program that asks the user to enter a boolean value (`true` or `false`).\n- If the value is `true`, print `Yes`.\n- Otherwise, print `No`.\n\n**Input:**\n- A boolean value in text format (`true` or `false`).\n\n**Output:**\n- `Yes` OR `No`",
+      "defaultCode": "value = input(\"Enter a boolean value (true/false): \").lower()\n\nif value == 'true':\n    print(\"Yes\")\nelse:\n    print(\"No\")",
+      "output": "Enter a boolean value (true/false): true\nYes"
     },
     {
       "id": 3,
-      "question": "The user enters hours, minutes, and seconds. The program calculates the total time in seconds.?",
-      "defaultCode": "print(\"Time Converter - Convert hours, minutes, and seconds to total seconds\")\n\nhours = int(input(\"Enter hours: \"))\nminutes = int(input(\"Enter minutes: \"))\nseconds = int(input(\"Enter seconds: \"))\n\ntotal_seconds = hours * 3600 + minutes * 60 + seconds\n\nprint(f\"\\nTotal time in seconds: {total_seconds} seconds\")",
-      "output": "Time Converter - Convert hours, minutes, and seconds to total seconds\nEnter hours: 1\nEnter minutes: 30\nEnter seconds: 45\n\nTotal time in seconds: 5445 seconds"
+      "question": "💰 **Bill Splitter**\n\nWrite a program that calculates how much each person should pay when splitting a bill.\n\n**Rules:**\n- Ask for the total bill amount.\n- Ask for the number of people.\n- Divide and round to 2 decimal places.\n- If people count is 0 → print `Number of people cannot be zero.`\n\n**Input:**\n- A float (bill amount).\n- An integer (people count).\n\n**Output:**\n- `Each person should pay: X.XX` OR error message.",
+      "defaultCode": "total_bill = float(input(\"Enter the total bill amount: \"))\npeople_count = int(input(\"Enter the number of people: \"))\n\nif people_count == 0:\n    print(\"Number of people cannot be zero.\")\nelse:\n    amount_per_person = total_bill / people_count\n    print(f\"Each person should pay: {amount_per_person:.2f}\")",
+      "output": "Enter the total bill amount: 120\nEnter the number of people: 4\nEach person should pay: 30.00"
     },
     {
       "id": 4,
-      "question": "The user enters 3 exam scores. The program calculates and prints the total and average.",
-      "defaultCode": "print(\"Student Score Calculator\")\n\nscore1 = float(input(\"Enter score 1: \"))\nscore2 = float(input(\"Enter score 2: \"))\nscore3 = float(input(\"Enter score 3: \"))\n\ntotal = score1 + score2 + score3\naverage = total / 3\n\nprint(\"\\n===== Result =====\")\nprint(f\"Total: {total}\")\nprint(f\"Average: {average}\")",
-      "output": "Student Score Calculator\nEnter score 1: 85\nEnter score 2: 90\nEnter score 3: 95\n\n===== Result =====\nTotal: 270.0\nAverage: 90.0"
+      "question": "🔐 **Password Strength Checker**\n\nWrite a program that checks if a password is strong.\n\n**Rules:**\n- Password length must be > 12.\n- Password must contain the word `code`.\n\n**Input:**\n- A string (password).\n\n**Output:**\n- `Strong password` OR `Weak password`",
+      "defaultCode": "password = input(\"Enter your password: \")\n\nif len(password) > 12 and \"code\" in password:\n    print(\"Strong password\")\nelse:\n    print(\"Weak password\")",
+      "output": "Enter your password: #codeJourney1#\nStrong password"
     },
     {
       "id": 5,
-      "question": "The user enters their name and birth year. The program calculates and prints their age (based on 2025).",
-      "defaultCode": "print(\"Age Calculator\")\n\nname = input(\"Enter your name: \")\nbirth_year = int(input(\"Enter your birth year: \"))\n\ncurrent_year = 2025\nage = current_year - birth_year\n\nprint(f\"\\n{name}, your age in {current_year} is: {age} years\")",
-      "output": "Age Calculator\nEnter your name: Sara\nEnter your birth year: 2005\n\nSara, your age in 2025 is: 20 years"
+      "question": "🔤 **Word Analyzer**\n\nWrite a program that asks the user for a word, then displays:\n- Number of characters.\n- First letter.\n- Last letter.\n\n**Input:**\n- A string (word).\n\n**Output:**\n- Word length.\n- First character.\n- Last character.",
+      "defaultCode": "word = input(\"Enter a word: \")\nlength = len(word)\nfirst_letter = word[0]\nlast_letter = word[-1]\nprint(f\"The word has {length} characters.\")\nprint(f\"First letter: {first_letter}\")\nprint(f\"Last letter: {last_letter}\")",
+      "output": "Enter a word: Python\nThe word has 6 characters.\nFirst letter: P\nLast letter: n"
     },
     {
       "id": 6,
-      "question": "The user enters the width and height of a rectangle. The program calculates and prints the area and perimeter.",
-      "defaultCode": "print(\"Rectangle Area & Perimeter Calculator\")\n\nwidth = float(input(\"Enter the width: \"))\nheight = float(input(\"Enter the height: \"))\n\narea = width * height\nperimeter = 2 * (width + height)\n\nprint(\"\\n===== Rectangle Info =====\")\nprint(f\"Area: {area}\")\nprint(f\"Perimeter: {perimeter}\")",
-      "output": "Rectangle Area & Perimeter Calculator\nEnter the width: 5\nEnter the height: 3\n\n===== Rectangle Info =====\nArea: 15.0\nPerimeter: 16.0"
+      "question": "📊 **Study Statistics Tracker**\n\nWrite a program that calculates total weekly study hours and prints a formatted report.\n\n**Steps:**\n1. Ask for name.\n2. Ask for daily study hours.\n3. Ask for study days per week.\n4. Calculate total weekly hours.\n5. Print a report.\n\n**Input:**\n- String (name).\n- Integer (hours per day).\n- Integer (days per week).\n\n**Output:**\n- Formatted study report.",
+      "defaultCode": "print(\"📚 Let’s track your study habits!\\n\")\n\nname = input(\"What’s your name? \")\nhours_per_day = int(input(\"How many hours do you study each day? \"))\ndays_per_week = int(input(\"How many days do you study per week? \"))\n\ntotal_hours = hours_per_day * days_per_week\n\nreport = f\"\"\"\n===========================\n📊 STUDY REPORT\n===========================\nName: {name}\nDaily Study Hours: {hours_per_day}\nStudy Days/Week: {days_per_week}\nTotal Weekly Study Hours: {total_hours}\n===========================\n\"\"\"\n\nprint(report)",
+      "output": "📚 Let’s track your study habits!\nWhat’s your name? Omar\nHow many hours do you study each day? 3\nHow many days do you study per week? 5\n\n===========================\n📊 STUDY REPORT\n===========================\nName: Omar\nDaily Study Hours: 3\nStudy Days/Week: 5\nTotal Weekly Study Hours: 15\n==========================="
     },
     {
       "id": 7,
-      "question": "The user enters two numbers. The program prints the result of raising the first number to the power of the second.",
-      "defaultCode": "print(\"Power Calculator\")\n\nbase = float(input(\"Enter the base number: \"))\nexponent = float(input(\"Enter the exponent: \"))\n\nresult = base ** exponent\n\nprint(f\"\\n{base} raised to the power of {exponent} is: {result}\")",
-      "output": "Power Calculator\nEnter the base number: 2\nEnter the exponent: 4\n\n2.0 raised to the power of 4.0 is: 16.0"
+      "question": "📆 **Project Duration & Cost Calculator**\n\nWrite a program that calculates project duration in weeks/days and total cost.\n\n**Steps:**\n1. Enter project start day.\n2. Enter project end day.\n3. Enter daily work cost.\n4. Calculate duration and cost.\n\n**Input:**\n- Integer (start day).\n- Integer (end day).\n- Float (daily cost).\n\n**Output:**\n- Weeks and days.\n- Total project cost.",
+      "defaultCode": "print(\"=== Project Duration Calculator ===\")\n\nstart_day = int(input(\"Enter start day (1-31): \"))\nend_day = int(input(\"Enter end day (1-31): \"))\ndaily_cost = float(input(\"Enter daily cost: \"))\n\ndays = end_day - start_day\nweeks = days // 7\nremaining_days = days % 7\ntotal_cost = days * daily_cost\n\nprint(f\"\\nProject took {weeks} weeks and {remaining_days} days.\")\nprint(f\"Total cost: ${total_cost:.2f}\")",
+      "output": "=== Project Duration Calculator ===\nEnter start day (1-31): 3\nEnter end day (1-31): 17\nEnter daily cost: 50\n\nProject took 2 weeks and 0 days.\nTotal cost: $700.00"
     },
     {
       "id": 8,
-      "question": " Assignment 1: Personal Information Card : The user enters their name, age, city, and hobby. The program prints a formatted personal info card.",
-      "defaultCode": "print(\"Create Your Personal Info Card\")\n\nname = input(\"Enter your name: \")\nage = input(\"Enter your age: \")\ncity = input(\"Enter your city: \")\nhobby = input(\"Enter your favorite hobby: \")\n\nprint(\"\\n===== Personal Info Card =====\")\nprint(f\"Name : {name}\")\nprint(f\"Age  : {age}\")\nprint(f\"City : {city}\")\nprint(f\"Hobby: {hobby}\")",
-      "output": "Create Your Personal Info Card\nEnter your name: Ali\nEnter your age: 18\nEnter your city: Cairo\nEnter your favorite hobby: Reading\n\n===== Personal Info Card =====\nName : Ali\nAge  : 18\nCity : Cairo\nHobby: Reading"
+      "question": "🧠 **Mini Quiz Game**\n\nWrite a program that asks the user 3 questions and calculates the score.\n\n**Rules:**\n- Each correct answer = +1 score.\n- Display final score and message based on performance.\n\n**Input:**\n- Answers to 3 quiz questions.\n\n**Output:**\n- Score and emoji-based message.",
+      "defaultCode": "score = 0\n\nprint(\"🧠 Welcome to the Smart Check!\\nAnswer these questions:\")\n\nq1 = input(\"1. What color is the sky on a clear day? \").lower()\nif q1 == \"blue\":\n    score += 1\n\nq2 = input(\"2. How many legs does a spider have? \")\nif q2 == \"8\":\n    score += 1\n\nq3 = input(\"3. What’s 5 * 3? \")\nif q3 == \"15\":\n    score += 1\n\nprint(f\"\\n🎓 Your score: {score}/3\")\n\nif score == 3:\n    print(\"🏆 Genius! You're amazing!\")\nelif score == 2:\n    print(\"👍 Good job! Almost perfect.\")\nelif score == 1:\n    print(\"🙂 Not bad! Try again.\")\nelse:\n    print(\"😅 Oops... better luck next time.\")",
+      "output": "🧠 Welcome to the Smart Check!\nAnswer these questions:\n1. What color is the sky on a clear day? blue\n2. How many legs does a spider have? 8\n3. What’s 5 * 3? 15\n\n🎓 Your score: 3/3\n🏆 Genius! You're amazing!"
     },
     {
       "id": 9,
-      "question": "Assignment 2: Simple Bill Calculator : The user enters the prices of 3 items. The program calculates and prints the total bill.",
-      "defaultCode": "print(\"Simple Shopping Bill Calculator\")\n\nitem1 = float(input(\"Enter price of item 1: \"))\nitem2 = float(input(\"Enter price of item 2: \"))\nitem3 = float(input(\"Enter price of item 3: \"))\n\ntotal = item1 + item2 + item3\n\nprint(\"\\n===== Bill Summary =====\")\nprint(f\"Total amount to pay: {total} EGP\")",
-      "output": "Simple Shopping Bill Calculator\nEnter price of item 1: 25.5\nEnter price of item 2: 40\nEnter price of item 3: 10.5\n\n===== Bill Summary =====\nTotal amount to pay: 76.0 EGP"
-    },
-    {
-      "id": 10,
-      "question": " Assignment 3: Seconds Breakdown Tool : The user enters total seconds. The program calculates how many minutes and seconds that is.",
-      "defaultCode": "print(\"Convert total seconds to minutes and seconds\")\n\ntotal_seconds = int(input(\"Enter total seconds: \"))\n\nminutes = total_seconds // 60\nseconds = total_seconds % 60\n\nprint(f\"\\n{total_seconds} seconds is equal to:\")\nprint(f\"{minutes} minutes and {seconds} seconds\")",
-      "output": "Convert total seconds to minutes and seconds\nEnter total seconds: 125\n\n125 seconds is equal to:\n2 minutes and 5 seconds"
+      "question": "🧭 **Mystery Forest Adventure**\n\nYou will create a **text-based game** where the player must choose the right path to escape the forest.\n\n📜 **Story:**\n- The player is lost in a mysterious forest and must choose between two paths.\n- Depending on their choices, they will either **win** or **lose**.\n\n🔀 **Choices:**\n1. If the player chooses **left**:\n   - They find a small cabin 🏡.\n     - If they choose **enter** (go inside) ⇒ **WIN 🎉**\n     - If they choose **keep walking** ⇒ **LOSE 😢**\n2. If the player chooses **right**:\n   - They reach a broken bridge 🌉.\n     - If they choose **cross** ⇒ **LOSE 🐊**\n     - If they choose **way** (find another way) ⇒ **WIN 🚁**\n3. Any other input at any step ⇒ **LOSE 🌙**\n\n💡 **Task:**\n- Ask the user for their first choice (`left` or `right`).\n- Based on that choice, ask a second question related to the situation.\n- Print the story step-by-step and the final result (win or lose).\n\n📥 **Input:**\n- First input: `left` or `right`.\n- Second input: depends on the chosen path.\n\n📤 **Output:**\n- Story events as they happen.\n- The final game result.",
+      "defaultCode": "print(\"🌲 Welcome to Mystery Forest Adventure!\\n\")\nprint(\"You find yourself lost in a mysterious forest... 🧭\")\n\nchoice1 = input(\n    \"You see two paths. Do you go 'left' or 'right'? ➡️  : \").lower()\nif choice1 == \"left\":\n  print(\"\\nYou walk along a quiet trail and find a small cabin. 🏡\")\n  choice2 = input(\n      \"\\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : \").lower()\n  if choice2 == \"enter\":\n    print(\"\\nInside, you find a map and a flashlight! 🗺️🔦\")\n    print(\"\\nYou follow the map and safely escape the forest. 🎉 YOU WIN!\")\n  else:\n    print(\n        \"\\nYou keep walking but get lost deeper in the forest... 😢 GAME OVER\")\nelif choice1 == \"right\":\n  print(\"\\nYou reach a river with a rickety bridge. 🌉\")\n  choice3 = input(\n      \"\\nDo you try to 'cross' or look for another 'way'? 🤔  : \").lower()\n  if choice3 == \"cross\":\n    print(\"\\nThe bridge breaks! You fall into the water... 🐊 GAME OVER\")\n  else:\n    print(\"\\nYou find a shallow spot and cross safely. 🏞️\")\n    print(\"\\nOn the other side, you see a rescue team. 🚁 YOU WIN!\")\nelse:\n  print(\n      \"\\nYou hesitate too long and night falls... 🌙 You’re stuck forever. GAME OVER\"\n  )",
+      "output": "🌲 Welcome to Mystery Forest Adventure!\nYou find yourself lost in a mysterious forest... 🧭\nYou see two paths. Do you go 'left' or 'right'? ➡️  : left\n\nYou walk along a quiet trail and find a small cabin. 🏡\n\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : enter\n\nInside, you find a map and a flashlight! 🗺️🔦\n\nYou follow the map and safely escape the forest. 🎉 YOU WIN!"
     }
   ],
   "lec4": [
     {
       "id": 1,
-      "question": "The program asks the user to enter a number and prints whether it is positive.",
-      "defaultCode": "num = int(input(\"Enter a number: \"))\n\nif num > 0:\n    print(\"Positive number\")",
-      "output": "Enter a number: 4\nPositive number"
+      "question": "🎲 **Random Number in Range**\n\nYour task is to write a program that asks the user for two integers representing a range (inclusive). Then generate and print a random number between them using `random.randint()`.\n\n**Input:**\n- Two integers (start and end).\n\n**Output:**\n- A random integer between the given numbers (inclusive).\n\n**Example:**\n```\nInput:\n5\n10\nOutput:\n7\n```",
+      "defaultCode": "import random\n\nstart = int(input(\"Enter the first number: \"))\nend = int(input(\"Enter the second number: \"))\n\nprint(random.randint(start, end))",
+      "output": "Enter the first number: 5\nEnter the second number: 10\n7"
     },
     {
       "id": 2,
-      "question": "The program checks if the entered number is even or odd .",
-      "defaultCode": "num = int(input(\"Enter a number: \"))\n\nif num % 2 == 0:\n    print(\"Even number\")\nelse:\n    print(\"Odd number\")",
-      "output": "Enter a number: 3\nOdd number"
+      "question": "🛠 **Comprehensive List Operations**\n\nCreate a Python program that demonstrates several common list operations in a connected scenario:\n\n1. Start with a list of numbers: `[3, 1, 2]`.\n2. Append the number **4** to the end of the list using `.append()`.\n3. Insert the number **10** at index **1** using `.insert()`.\n4. Remove the number **3** from the list using `.remove()`.\n5. Remove the last element from the list using `.pop()`.\n6. Sort the list in ascending order using `.sort()`.\n7. Reverse the list order using `.reverse()`.\n8. Find the index of the number **2** using `.index()`.\n9. Count how many times the number **1** appears using `.count()`.\n\nAfter each operation, print the list (or the result where appropriate).\n\n**Input:**\n- No input from the user (use the given numbers for demonstration).\n\n**Output:**\n- Show the list after each operation, plus the results of `.index()` and `.count()`.\n\n**Example Output:**\n```\nInitial list: [3, 1, 2]\nAfter append 4: [3, 1, 2, 4]\nAfter insert 10 at index 1: [3, 10, 1, 2, 4]\nAfter remove 3: [10, 1, 2, 4]\nAfter pop last element: [10, 1, 2]\nAfter sort ascending: [1, 2, 10]\nAfter reverse order: [10, 2, 1]\nIndex of 2: 1\nCount of 1: 1\n```",
+      "defaultCode": "nums = [3, 1, 2]\nprint('Initial list:', nums)\n\nnums.append(4)\nprint('After append 4:', nums)\n\nnums.insert(1, 10)\nprint('After insert 10 at index 1:', nums)\n\nnums.remove(3)\nprint('After remove 3:', nums)\n\nnums.pop()\nprint('After pop last element:', nums)\n\nnums.sort()\nprint('After sort ascending:', nums)\n\nnums.reverse()\nprint('After reverse order:', nums)\n\nprint('Index of 2:', nums.index(2))\nprint('Count of 1:', nums.count(1))",
+      "output": "Initial list: [3, 1, 2]\nAfter append 4: [3, 1, 2, 4]\nAfter insert 10 at index 1: [3, 10, 1, 2, 4]\nAfter remove 3: [10, 1, 2, 4]\nAfter pop last element: [10, 1, 2]\nAfter sort ascending: [1, 2, 10]\nAfter reverse order: [10, 2, 1]\nIndex of 2: 1\nCount of 1: 1"
     },
     {
       "id": 3,
-      "question": "The user enters a password. If it's too short (< 6), too long (> 12), or contains '123', the program rejects it.",
-      "defaultCode": "password = input(\"Enter a password: \")\n\nif len(password) < 6:\n    print(\"Password too short\")\nelif len(password) > 12:\n    print(\"Password too long\")\nelif \"123\" in password:\n    print(\"Password too weak (contains 123)\")\nelse:\n    print(\"Password accepted\")",
-      "output": "Enter a password: abc123\nPassword too weak (contains 123)"
+      "question": "🎯 **Random Winner Selector**\n\nWrite a program that asks the user to enter several names separated by commas. Then randomly select one of the names as the winner using `random.choice()`.\n\n**Input:**\n- A string containing names separated by commas.\n\n**Output:**\n- A string: `The winner is: <name>`.\n\n**Example:**\n```\nInput:\nAhmed,Mona,Sara\nOutput:\nThe winner is: Mona\n```",
+      "defaultCode": "import random\n\nnames = input(\"Enter names separated by commas: \").split(',')\nwinner = random.choice(names)\nprint(\"The winner is:\", winner)",
+      "output": "Enter names separated by commas: Ahmed,Mona,Sara\nThe winner is: Mona"
     },
     {
       "id": 4,
-      "question": "The user enters a number from 1 to 5. The program responds with a matching emoji and message about their day.",
-      "defaultCode": "rating = int(input(\"How was your day from 1 to 5? ⭐: \"))\n\nif rating == 5:\n    print(\"🌟 Awesome! You're shining!\")\nelif rating == 4:\n    print(\"😊 Great! Keep going.\")\nelif rating == 3:\n    print(\"😐 Not bad, tomorrow is a new chance.\")\nelif rating == 2:\n    print(\"😕 Hmm, rough day. Take it easy.\")\nelif rating == 1:\n    print(\"💤 Tough day... rest and recharge.\")\nelse:\n    print(\"❌ Invalid rating! Please choose from 1 to 5.\")",
-      "output": "How was your day from 1 to 5? ⭐: 4\n😊 Great! Keep going."
+
+      "question": "🔄 **Shuffle Word Letters**\n\nWrite a program that asks the user for a single word, then randomly shuffles its letters using `random.shuffle()`.\n\n**Input:**\n- A single word.\n\n**Output:**\n- The same letters but in a random order.\n\n**Example:**\n```\nInput:\nPython\nOutput:\nnothPy\n```",
+      "defaultCode": "import random\n\nword = list(input(\"Enter a word: \"))\nrandom.shuffle(word)\nprint(''.join(word))",
+      "output": "Enter a word: Python\nnothPy"
     },
+
     {
       "id": 5,
-      "question": "The user tries to guess a secret number between 1 and 10. The program gives feedback with emojis based on the guess.",
-      "defaultCode": "import random\n\nsecret = random.randint(1, 10)\nguess = int(input(\"🎯 Guess a number between 1 and 10: \"))\n\nif guess == secret:\n    print(\"🎉 Correct! You're a genius!\")\nelif abs(guess - secret) == 1:\n    print(\"🔥 So close! Just one off.\")\nelse:\n    print(f\"❌ Nope! The correct number was {secret}. Try again.\")",
-      "output": "🎯 Guess a number between 1 and 10: 7\n🔥 So close! Just one off."
+      "question": "📐 **Square Root Calculator**\n\nWrite a program that asks the user for a number, then calculates and prints its square root using `math.sqrt()`.\n\n**Input:**\n- A float or integer.\n\n**Output:**\n- The square root of the number.\n\n**Example:**\n```\nInput:\n16\nOutput:\n4.0\n```",
+      "defaultCode": "import math\n\nnum = float(input(\"Enter a number: \"))\nprint(\"Square root:\", math.sqrt(num))",
+      "output": "Enter a number: 16\nSquare root: 4.0"
     },
     {
       "id": 6,
-      "question": "A simple quiz with 3 questions. The score is calculated, and the program responds with an emoji-based message.",
-      "defaultCode": "score = 0\n\nprint(\"🧠 Welcome to the Smart Check!\\nAnswer these questions:\")\n\nq1 = input(\"1. What color is the sky on a clear day? \").lower()\nif q1 == \"blue\":\n    score += 1\n\nq2 = input(\"2. How many legs does a spider have? \")\nif q2 == \"8\":\n    score += 1\n\nq3 = input(\"3. What’s 5 * 3? \")\nif q3 == \"15\":\n    score += 1\n\nprint(f\"\\n🎓 Your score: {score}/3\")\n\nif score == 3:\n    print(\"🏆 Genius! You're amazing!\")\nelif score == 2:\n    print(\"👍 Good job! Almost perfect.\")\nelif score == 1:\n    print(\"🙂 Not bad! Try again.\")\nelse:\n    print(\"😅 Oops... better luck next time.\")",
-      "output": "🧠 Welcome to the Smart Check!\nAnswer these questions:\n1. What color is the sky on a clear day? blue\n2. How many legs does a spider have? 8\n3. What’s 5 * 3? 15\n\n🎓 Your score: 3/3\n🏆 Genius! You're amazing!"
+      "question": "👥 **First and Last Friend**\n\nCreate a list containing 3 friends' names, then print:\n1. The first friend in the list.\n2. The last friend in the list.\n\n**Input:**\n- No input from the user.\n\n**Output:**\n- First and last names from the list.\n\n**Example:**\n```\nOutput:\nAhmed\nSara\n```",
+      "defaultCode": "friends = ['Ahmed', 'Mona', 'Sara']\nprint(friends[0])\nprint(friends[-1])",
+      "output": "Ahmed\nSara"
     },
     {
       "id": 7,
-      "question": "🧭 You are lost in a mysterious forest. You must make the right decisions to escape:\n\n➡️ First choice:\n- If you type 'left':\n  - You find a quiet trail and a small cabin 🏡.\n  - If you 'enter' the cabin:\n    - You find a map and flashlight 🗺️🔦 and escape the forest. 🎉 YOU WIN!\n  - If you choose to 'keep walking':\n    - You get lost deeper in the forest. 😢 GAME OVER\n\n- If you type 'right':\n  - You reach a river with a broken bridge 🌉.\n  - If you try to 'cross':\n    - The bridge collapses and you fall. 🐊 GAME OVER\n  - If you look for another 'way':\n    - You find a shallow path and cross safely. 🏞️ A rescue team saves you. 🚁 YOU WIN!\n\n- If you type anything else:\n  - You hesitate too long and night falls 🌙. You're stuck forever. GAME OVER",
-      "defaultCode": "print(\"🌲 Welcome to Mystery Forest Adventure!\\n\")\nprint(\"You find yourself lost in a mysterious forest... 🧭\")\n\nchoice1 = input(\n    \"You see two paths. Do you go 'left' or 'right'? ➡️  : \").lower()\nif choice1 == \"left\":\n  print(\"\\nYou walk along a quiet trail and find a small cabin. 🏡\")\n  choice2 = input(\n      \"\\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : \").lower()\n  if choice2 == \"enter\":\n    print(\"\\nInside, you find a map and a flashlight! 🗺️🔦\")\n    print(\"\\nYou follow the map and safely escape the forest. 🎉 YOU WIN!\")\n  else:\n    print(\n        \"\\nYou keep walking but get lost deeper in the forest... 😢 GAME OVER\")\nelif choice1 == \"right\":\n  print(\"\\nYou reach a river with a rickety bridge. 🌉\")\n  choice3 = input(\n      \"\\nDo you try to 'cross' or look for another 'way'? 🤔  : \").lower()\n  if choice3 == \"cross\":\n    print(\"\\nThe bridge breaks! You fall into the water... 🐊 GAME OVER\")\n  else:\n    print(\"\\nYou find a shallow spot and cross safely. 🏞️\")\n    print(\"\\nOn the other side, you see a rescue team. 🚁 YOU WIN!\")\nelse:\n  print(\n      \"\\nYou hesitate too long and night falls... 🌙 You’re stuck forever. GAME OVER\"\n  )",
-      "output": "🌲 Welcome to Mystery Forest Adventure!\nYou find yourself lost in a mysterious forest... 🧭\nYou see two paths. Do you go 'left' or 'right'? ➡️  : left\n\nYou walk along a quiet trail and find a small cabin. 🏡\n\nDo you 'enter' the cabin or 'keep walking'? 🏃‍♂️  : enter\n\nInside, you find a map and a flashlight! 🗺️🔦\n\nYou follow the map and safely escape the forest. 🎉 YOU WIN!"
+      "question": "🔐 **Simple Random Password**\n\nCreate a program that generates a password containing **6 random English letters** (both uppercase and lowercase) using `string.ascii_letters` and `random.choice()`.\n\n**Input:**\n- No input required from the user.\n\n**Output:**\n- A string of 6 random letters.\n\n**Example:**\n```\nOutput:\naZbYcD\n```",
+      "defaultCode": "import random\nimport string\n\npassword = ''.join(random.choice(string.ascii_letters) for _ in range(6))\nprint(password)",
+      "output": "aZbYcD"
+    },
+    {
+      "id": 8,
+      "question": "💪 **Strong Random Password**\n\nWrite a program that asks the user for the length of a password, then generates a strong password containing:\n- Uppercase letters\n- Lowercase letters\n- Numbers\n- Special characters\n\n**Input:**\n- An integer representing password length.\n\n**Output:**\n- A random password of the given length.\n\n**Example:**\n```\nInput:\n6\nOutput:\nA7@c!P\n```",
+      "defaultCode": "import random\nimport string\n\nlength = int(input(\"Enter password length: \"))\nchars = string.ascii_letters + string.digits + string.punctuation\npassword = ''.join(random.choice(chars) for _ in range(length))\nprint(password)",
+      "output": "A7@c!P"
+    },
+    {
+      "id": 9,
+      "question": "👥 **Friends Manager**\n\nYour task is to write a program that:\n1. Asks the user to enter a list of friends' names separated by commas.\n2. Adds a new friend to the list.\n3. Removes a friend from the list.\n4. Edits a friend's name by index.\n5. Prints the final list joined with `-`.\n6. Picks a random friend using `random.choice()`.\n\n**Input:**\n- A comma-separated list of names.\n- A new friend's name.\n- A friend's name to remove.\n- An index and a new name.\n\n**Output:**\n- Updated friends list.\n- A random friend from the list.\n\n**Example:**\n```\nInput:\nAli,Omar,Mona,Sara\nYoussef\nMona\n0\nAhmed\n\nOutput:\n📋 Your friends list: ['Ali', 'Omar', 'Mona', 'Sara']\n➕ After adding: ['Ali', 'Omar', 'Mona', 'Sara', 'Youssef']\n🗑 After removing: ['Ali', 'Omar', 'Sara', 'Youssef']\n✏️ After editing: ['Ahmed', 'Omar', 'Sara', 'Youssef']\n📝 Final friends list: Ahmed - Omar - Sara - Youssef\n🎲 Random friend: Omar\n```",
+      "defaultCode": "import random\n\n# 1- Input friends\nfriends_input = input(\"Enter your friends separated by commas: \")\nfriends = friends_input.split(\",\")\nprint(\"\\n📋 Your friends list:\", friends)\n\n# 2- Add new friend\nnew_friend = input(\"\\nEnter a new friend to add: \")\nfriends.append(new_friend)\nprint(\"➕ After adding:\", friends)\n\n# 3- Remove a friend\nremove_friend = input(\"\\nEnter a friend to remove: \")\nif remove_friend in friends:\n    friends.remove(remove_friend)\n    print(\"🗑 After removing:\", friends)\nelse:\n    print(\"⚠ Friend not found!\")\n\n# 4- Edit a friend\nindex = int(input(\"\\nEnter the index to edit (starting from 0): \"))\nif 0 <= index < len(friends):\n    new_name = input(\"Enter the new name: \")\n    friends[index] = new_name\n    print(\"✏️ After editing:\", friends)\nelse:\n    print(\"⚠ Invalid index!\")\n\n# 5- Show list joined\nprint(\"\\n📝 Final friends list:\", \" - \".join(friends))\n\n# 6- Pick random friend\nchosen = random.choice(friends)\nprint(\"🎲 Random friend:\", chosen)",
+      "output": "Enter your friends separated by commas: Ali,Omar,Mona,Sara\n\n📋 Your friends list: ['Ali', 'Omar', 'Mona', 'Sara']\n\nEnter a new friend to add: Youssef\n➕ After adding: ['Ali', 'Omar', 'Mona', 'Sara', 'Youssef']\n\nEnter a friend to remove: Mona\n🗑 After removing: ['Ali', 'Omar', 'Sara', 'Youssef']\n\nEnter the index to edit (starting from 0): 0\nEnter the new name: Ahmed\n✏️ After editing: ['Ahmed', 'Omar', 'Sara', 'Youssef']\n\n📝 Final friends list: Ahmed - Omar - Sara - Youssef\n🎲 Random friend: Omar"
+    }
+  ],
+  "lec5": [
+    {
+      "id": 1,
+      "question": "✊📄✂️ **Rock Paper Scissors with ASCII Art**\n\nYour task is to write a program that lets the user play *Rock, Paper, Scissors* against the computer.\n\n1. The user chooses `rock`, `paper`, or `scissors`.\n2. The computer randomly chooses one of the three options using `random.choice()`.\n3. Print both choices with their corresponding **ASCII art**.\n4. Decide and print the result: `You win`, `Computer wins`, or `It’s a tie`.\n\n**Input:**\n- A string from the user: `rock`, `paper`, or `scissors`.\n\n**Output:**\n- ASCII art of the user’s choice.\n- ASCII art of the computer’s choice.\n- The game result.\n",
+      "defaultCode": "import random\n\n# ASCII art for each choice\nrock = \"\"\"\n    _______\n---'   ____)\n      (_____)\n      (_____)\n      (____)\n---.__(___)\n\"\"\"\n\npaper = \"\"\"\n    _______\n---'   ____)____\n          ______)\n          _______)\n         _______)\n---.__________)\n\"\"\"\n\nscissors = \"\"\"\n    _______\n---'   ____)\n      (_____)\n   (________)\n    (____)\n---.__(___)\n\"\"\"\n\nchoices = {\"rock\": rock, \"paper\": paper, \"scissors\": scissors}\n\n# 1- User choice\nuser_choice = input(\"Enter rock, paper, or scissors: \").lower()\nif user_choice not in choices:\n    print(\"⚠ Invalid choice!\")\n    exit()\n\nprint(\"\\nYou chose:\")\nprint(choices[user_choice])\n\n# 2- Computer choice\ncomputer_choice = random.choice(list(choices.keys()))\nprint(\"Computer chose:\")\nprint(choices[computer_choice])\n\n# 3- Decide winner\nif user_choice == computer_choice:\n    print(\"It's a tie!\")\nelif (user_choice == \"rock\" and computer_choice == \"scissors\") or \\\n     (user_choice == \"scissors\" and computer_choice == \"paper\") or \\\n     (user_choice == \"paper\" and computer_choice == \"rock\"):\n    print(\"You win!\")\nelse:\n    print(\"Computer wins!\")",
+      "output": "Enter rock, paper, or scissors: rock\n\nYou chose:Rock\n    _______\n---'   ____)\n      (_____)\n      (_____)\n      (____)\n---.__(___)\n\nComputer chose: paper\n    _______\n---'   ____)____\n          ______)\n          _______)\n         _______)\n---.__________)\n\nYou win!"
+    },
+    {
+      "id": 2,
+      "question": "🍽 **Restaurant Order Invoice**\n\nYour task is to write a program that simulates a restaurant invoice:\n\n1. Ask the customer to enter their name.\n2. Ask for 3 items with their prices .\n3. Calculate the subtotal.\n4. Add tax (10%) and service charge (5%).\n5. Print a detailed **invoice** formatted with ASCII art style.\n\n**Input:**\n- Customer name.\n- 3 items and their prices.\n\n**Output:**\n- Subtotal, tax, service charge, and final total.\n- Nicely formatted invoice with ASCII layout.\n",
+      "defaultCode": "customer_name = input(\"Enter customer name: \")\n\n# Items (no loops)\nitem1 = input(\"Enter first item name: \")\nprice1 = float(input(f\"Enter price for {item1}: \"))\n\nitem2 = input(\"Enter second item name: \")\nprice2 = float(input(f\"Enter price for {item2}: \"))\n\nitem3 = input(\"Enter third item name: \")\nprice3 = float(input(f\"Enter price for {item3}: \"))\n\n# Calculations\nsubtotal = price1 + price2 + price3\ntax = subtotal * 0.1\nservice = subtotal * 0.05\ntotal = subtotal + tax + service\n\n# Print invoice\nprint(\"\\n\" + \"=\" * 40)\nprint(\" \" * 12 + \"🍽 RESTAURANT BILL 🍽\")\nprint(\"=\" * 40)\nprint(f\"👤 Customer: {customer_name}\")\nprint(\"-\" * 40)\nprint(f\"{item1:<20} {price1:>10.2f} $\")\nprint(f\"{item2:<20} {price2:>10.2f} $\")\nprint(f\"{item3:<20} {price3:>10.2f} $\")\nprint(\"-\" * 40)\nprint(f\"{'Subtotal':<20} {subtotal:>10.2f} $\")\nprint(f\"{'Tax (10%)':<20} {tax:>10.2f} $\")\nprint(f\"{'Service (5%)':<20} {service:>10.2f} $\")\nprint(\"=\" * 40)\nprint(f\"{'TOTAL':<20} {total:>10.2f} $\")\nprint(\"=\" * 40)\nprint(\" \" * 10 + \"✅ Thank you for dining with us!\")\nprint(\"=\" * 40)",
+      "output": "Enter customer name: Ahmed\nEnter first item name: Pizza\nEnter price for Pizza: 120\nEnter second item name: Burger\nEnter price for Burger: 80\nEnter third item name: Juice\nEnter price for Juice: 30\n\n========================================\n        🍽 RESTAURANT BILL 🍽\n========================================\n👤 Customer: Ahmed\n----------------------------------------\nPizza                     120.00 $\nBurger                     80.00 $\nJuice                      30.00 $\n----------------------------------------\nSubtotal                  230.00 $\nTax (10%)                  23.00 $\nService (5%)               11.50 $\n========================================\nTOTAL                     264.50 $\n========================================\n✅ Thank you for dining with us!\n========================================"
+    }
+  ],
+  "lec6": [
+    {
+      "id": 1,
+      "question": "📝✅ **Multiplication Table (for loop)**\n\nYour task is to write a program that prints the multiplication table for a number entered by the user.\n\n1. Ask the user to enter a number.\n2. Use a **for loop** to print the multiplication table from 1 to 10.\n\n**Input:**\n- An integer number.\n\n**Output:**\n- Multiplication table from 1 to 10.",
+      "defaultCode": "num = int(input(\"Enter a number: \"))\n\nprint(f\"Multiplication Table of {num}\")\nfor i in range(1, 11):\n    print(f\"{num} x {i} = {num * i}\")",
+      "output": "Enter a number: 5\nMultiplication Table of 5\n5 x 1 = 5\n5 x 2 = 10\n5 x 3 = 15\n...\n5 x 10 = 50"
+    },
+    {
+      "id": 2,
+      "question": "📝✅ **Sum of List (for loop)**\n\nYour task is to write a program that calculates the sum of numbers in a list.\n\n1. Ask the user to enter numbers separated by spaces.\n2. Use a **for loop** to calculate the total sum.\n\n**Input:**\n- List of integers.\n\n**Output:**\n- Print the sum of the numbers.",
+      "defaultCode": "numbers = input(\"Enter numbers separated by spaces: \").split()\nnumbers = [int(n) for n in numbers]\n\ntotal = 0\nfor n in numbers:\n    total += n\n\nprint(\"Sum:\", total)",
+      "output": "Enter numbers separated by spaces: 3 5 7 2\nSum: 17"
+    },
+    {
+      "id": 3,
+      "question": "📝✅ **Countdown Timer (while loop)**\n\nYour task is to write a program that simulates a countdown.\n\n1. Ask the user for a starting number.\n2. Use a **while loop** to count down to 0.\n3. Print 'Time’s up!' at the end.\n\n**Input:**\n- Integer number.\n\n**Output:**\n- Countdown printed line by line.",
+      "defaultCode": "num = int(input(\"Enter a starting number: \"))\n\nwhile num >= 0:\n    print(num)\n    num -= 1\n\nprint(\"⏰ Time's up!\")",
+      "output": "Enter a starting number: 5\n5\n4\n3\n2\n1\n0\n⏰ Time's up!"
+    },
+    {
+      "id": 4,
+      "question": "📝✅ **Guessing Game (while loop)**\n\nYour task is to write a program where the computer selects a random number between 1 and 10, and the user has to guess it.\n\n1. Keep asking until the user guesses correctly.\n2. Print a message if the guess is too high or too low.\n\n**Input:**\n- Integer guess from user.\n\n**Output:**\n- Messages guiding the user until they win.",
+      "defaultCode": "import random\nsecret = random.randint(1, 10)\n\nwhile True:\n    guess = int(input(\"Guess a number between 1 and 10: \"))\n    if guess == secret:\n        print(\"🎉 Correct! You guessed it!\")\n        break\n    elif guess < secret:\n        print(\"Too low, try again!\")\n    else:\n        print(\"Too high, try again!\")",
+      "output": "Guess a number between 1 and 10: 3\nToo low, try again!\nGuess a number between 1 and 10: 8\nToo high, try again!\nGuess a number between 1 and 10: 5\n🎉 Correct! You guessed it!"
+    },
+    {
+      "id": 5,
+      "question": "📝✅ **Triangle Pattern (nested loop)**\n\nYour task is to print a triangle of stars using nested for loops.\n\n1. Ask the user for the number of rows.\n2. Print a triangle like this if input is 5:\n*\n**\n***\n****\n*****\n\n**Input:**\n- Integer number (rows).\n\n**Output:**\n- Triangle pattern.",
+      "defaultCode": "rows = int(input(\"Enter number of rows: \"))\n\nfor i in range(1, rows + 1):\n    for j in range(i):\n        print(\"*\", end=\"\")\n    print()",
+      "output": "Enter number of rows: 5\n*\n**\n***\n****\n*****"
+    },
+    {
+      "id": 6,
+      "question": "📝✅ **Multiplication Table Grid (nested loop)**\n\nYour task is to generate a multiplication table grid using nested loops.\n\n1. Use a nested loop to print the table from 1 × 1 up to 10 × 10.\n2. Format it in a grid style.\n\n**Input:**\n- No input needed.\n\n**Output:**\n- A full multiplication table (1 to 10).",
+      "defaultCode": "for i in range(1, 11):\n    for j in range(1, 11):\n        print(f\"{i*j:3}\", end=\" \")\n    print()",
+      "output": "1*1=1\n1*2=2\n1*3=3\n...\n 2*1=2\n 2*2=4\n 2*3=6\n..."
+    },
+    {
+      "id": 7,
+      "question": "📝✅ **Task Manager Program**\n\nYour task is to write a program that manages a list of tasks with the following features:\n\n1. Show all tasks with their index numbers.\n2. Add a new task to the list.\n3. Delete a task by entering its number.\n4. Search for a task by keyword (case-insensitive).\n5. Edit an existing task by entering its number and the new value.\n6. Exit the program.\n\n**Input:**\n- User choice from the menu (1–6).\n- Strings for new or edited tasks.\n- Numbers for delete/edit operations.\n\n**Output:**\n- Displayed menu.\n- Tasks list with indexes.\n- Messages for successful add, edit, delete, or error if invalid input.\n- Search result message if found or not.\n",
+      "defaultCode": "tasks = []\n\nwhile True:\n    print(\"\\n=== Task Manager ===\")\n    print(\"1. Show Tasks\")\n    print(\"2. Add Task\")\n    print(\"3. Delete Task\")\n    print(\"4. Search Task\")\n    print(\"5. Edit Task\")\n    print(\"6. Exit\")\n\n    choice = input(\"Choose an option: \")\n\n    if choice == '1':\n        if not tasks:\n            print(\"📭 No tasks available\")\n        else:\n            for i, task in enumerate(tasks, start=1):\n                print(f\"{i}. {task}\")\n\n    elif choice == '2':\n        new_task = input(\"Enter a new task: \")\n        tasks.append(new_task)\n        print(\"✅ Task added successfully\")\n\n    elif choice == '3':\n        del_index = int(input(\"Enter the task number to delete: \")) - 1\n        if 0 <= del_index < len(tasks):\n            removed = tasks.pop(del_index)\n            print(f\"🗑️ Task deleted: {removed}\")\n        else:\n            print(\"❌ Invalid number\")\n\n    elif choice == '4':\n        search = input(\"Enter the task name to search: \")\n        found = False\n        for task in tasks:\n            if search.lower() in task.lower():\n                print(f\"🔍 Task found: {task}\")\n                found = True\n                break\n        if not found:\n            print(\"🚫 Task not found\")\n\n    elif choice == '5':\n        edit_index = int(input(\"Enter the task number to edit: \")) - 1\n        if 0 <= edit_index < len(tasks):\n            new_value = input(\"Enter the new task: \")\n            tasks[edit_index] = new_value\n            print(\"✏️ Task updated successfully\")\n        else:\n            print(\"❌ Invalid number\")\n\n    elif choice == '6':\n        print(\"👋 Exiting the program...\")\n        break\n\n    else:\n        print(\"⚠️ Invalid choice, please try again\")",
+      "output": "=== Task Manager ===\n1. Show Tasks\n2. Add Task\n3. Delete Task\n4. Search Task\n5. Edit Task\n6. Exit\n\nChoose an option: 2\nEnter a new task: Study React\n✅ Task added successfully\n\nChoose an option: 1\n1. Study React\n\nChoose an option: 4\nEnter the task name to search: react\n🔍 Task found: Study React\n\nChoose an option: 5\nEnter the task number to edit: 1\nEnter the new task: Study Python\n✏️ Task updated successfully\n\nChoose an option: 1\n1. Study Python\n\nChoose an option: 6\n👋 Exiting the program..."
+    }
+  ],
+  "lec7": [
+    {
+      "id": 1,
+      "question": "🔍✅ **Find the Odd Occurrence**\n\nGiven an array of integers, find the one that appears an odd number of times.\n\nThere will always be only one integer that appears an odd number of times.\n\n**Examples:**\n- [7] → 7\n- [0] → 0\n- [1,1,2] → 2\n- [0,1,0,1,0] → 0\n- [1,2,2,3,3,3,4,3,3,3,2,2,1] → 4\n\n**Input:**\n- An array of integers.\n\n**Output:**\n- The integer that occurs an odd number of times.",
+      "defaultCode": "def find_odd(arr):\n    for num in arr:\n        if arr.count(num) % 2 == 1:\n            return num\n\n# Example usage\nprint(find_odd([7]))\nprint(find_odd([0]))\nprint(find_odd([1,1,2]))\nprint(find_odd([0,1,0,1,0]))\nprint(find_odd([1,2,2,3,3,3,4,3,3,3,2,2,1]))",
+      "output": "7\n0\n2\n0\n4"
+    },
+    {
+      "id": 2,
+      "question": "👍✅ **Who Likes It?**\n\nYou probably know the \"like\" system from Facebook and other pages. People can \"like\" blog posts, pictures, or other items. We want to create the text that should be displayed next to such an item.\n\nImplement a function which takes an array containing the names of people that like an item, and returns the display text as shown in the examples.\n\n**Examples:**\n- [] → \"no one likes this\"\n- [\"Peter\"] → \"Peter likes this\"\n- [\"Jacob\", \"Alex\"] → \"Jacob and Alex like this\"\n- [\"Max\", \"John\", \"Mark\"] → \"Max, John and Mark like this\"\n- [\"Alex\", \"Jacob\", \"Mark\", \"Max\"] → \"Alex, Jacob and 2 others like this\"\n\n**Input:**\n- An array of strings (names).\n\n**Output:**\n- A string describing who likes the item.",
+      "defaultCode": "def likes(names):\n    n = len(names)\n    if n == 0:\n        return \"no one likes this\"\n    elif n == 1:\n        return f\"{names[0]} likes this\"\n    elif n == 2:\n        return f\"{names[0]} and {names[1]} like this\"\n    elif n == 3:\n        return f\"{names[0]}, {names[1]} and {names[2]} like this\"\n    else:\n        return f\"{names[0]}, {names[1]} and {n-2} others like this\"\n\n# Example usage\nprint(likes([]))\nprint(likes([\"Peter\"]))\nprint(likes([\"Jacob\", \"Alex\"]))\nprint(likes([\"Max\", \"John\", \"Mark\"]))\nprint(likes([\"Alex\", \"Jacob\", \"Mark\", \"Max\"]))",
+      "output": "no one likes this\nPeter likes this\nJacob and Alex like this\nMax, John and Mark like this\nAlex, Jacob and 2 others like this"
+    },
+    {
+      "id": 3,
+      "question": "🔢✅ **Square Every Digit**\n\nIn this kata, you are asked to square every digit of a number and concatenate them.\n\n**Examples:**\n- 9119 → 811181 (since 9²=81 and 1²=1 → 81-1-1-81)\n- 765 → 493625 (since 7²=49, 6²=36, 5²=25 → 49-36-25)\n\n**Note:** The function accepts an integer and returns an integer.\n\n**Input:**\n- An integer.\n\n**Output:**\n- An integer formed by concatenating the squares of each digit.",
+      "defaultCode": "def square_digits(num):\n    result = \"\"\n    for digit in str(num):\n        digit2 = int(digit) ** 2\n        result += str(digit2)\n\n    return int(result)\n\n# Example usage\nprint(square_digits(9119))  # 811181\nprint(square_digits(765))   # 493625",
+      "output": "811181\n493625"
+    },
+    {
+      "id": 4,
+      "question": "🔄✅ **Reverse a String**\n\nWrite a function that takes a string as input and returns the string reversed.\n\n**Examples:**\n- \"hello\" → \"olleh\"\n- \"world\" → \"dlrow\"\n\n**Input:**\n- A string.\n\n**Output:**\n- The reversed string.",
+      "defaultCode": "def reverse_string(text):\n    # متغير فارغ هيخزن النتيجة\n    reversed_text = \"\"\n\n    # هنمشي على كل حرف في النص من الآخر للأول\n    for i in range(len(text) - 1, -1, -1):\n        # نضيف الحرف للنتيجة\n        reversed_text += text[i]\n\n    # نرجع النص المعكوس\n    return reversed_text\n\n# Example usage\nprint(reverse_string(\"hello\"))  # olleh\nprint(reverse_string(\"world\"))  # dlrow",
+      "output": "olleh\ndlrow"
+    },
+    {
+      "id": 5,
+      "question": "🧮✅ **Sum of Digits**\n\nWrite a function that takes a positive integer as input and returns the sum of its digits.\n\n**Examples:**\n- 123 → 6 (since 1+2+3=6)\n- 987 → 24 (since 9+8+7=24)\n\n**Input:**\n- A positive integer.\n\n**Output:**\n- An integer representing the sum of its digits.",
+      "defaultCode": "def sum_of_digits(num):\n    total = 0\n    for digit in str(num):\n        total += int(digit)\n    return total\n\n# Example usage\nprint(sum_of_digits(123))\nprint(sum_of_digits(987))",
+      "output": "6\n24"
+    },
+    {
+      "id": 6,
+      "question": "📊✅ **Student Grades Manager**\n\nCreate a program that manages student grades with the following features:\n\n1. Add a new grade.\n2. Show all grades.\n3. Calculate the average grade.\n4. Show the highest and lowest grade.\n5. Exit the program.\n\n**Input:**\n- User choice from the menu (1-5).\n- Integers for student grades (0-100).\n\n**Output:**\n- Interactive console output showing grades and calculations.",
+      "defaultCode": "def show_grades(grades):\n    if not grades:\n        print(\"No grades available.\")\n    else:\n        print(\"All grades:\", grades)\n\n\ndef add_grade(grades):\n    grade = int(input(\"Enter a grade (0-100): \"))\n    if 0 <= grade <= 100:\n        grades.append(grade)\n        print(\"Grade added!\")\n    else:\n        print(\"Grade must be between 0 and 100.\")\n\n\ndef average_grade(grades):\n    if not grades:\n        print(\"No grades to calculate average.\")\n    else:\n        avg = sum(grades) / len(grades)\n        print(f\"Average grade: {avg:.2f}\")\n\n\ndef min_max_grade(grades):\n    if not grades:\n        print(\"No grades to analyze.\")\n    else:\n        print(f\"Highest grade: {max(grades)}\")\n        print(f\"Lowest grade: {min(grades)}\")\n\n\ndef main():\n    grades = []\n    while True:\n        print(\"\\n--- Student Grades Manager ---\")\n        print(\"1. Add grade\")\n        print(\"2. Show grades\")\n        print(\"3. Calculate average\")\n        print(\"4. Show highest & lowest\")\n        print(\"5. Exit\")\n\n        choice = input(\"Enter your choice: \")\n\n        if choice == \"1\":\n            add_grade(grades)\n        elif choice == \"2\":\n            show_grades(grades)\n        elif choice == \"3\":\n            average_grade(grades)\n        elif choice == \"4\":\n            min_max_grade(grades)\n        elif choice == \"5\":\n            print(\"Goodbye!\")\n            break\n        else:\n            print(\"Invalid choice, try again!\")\n\n# Run the program\nmain()",
+      "output": "--- Student Grades Manager ---\n1. Add grade\n2. Show grades\n3. Calculate average\n4. Show highest & lowest\n5. Exit\nEnter your choice: 1\nEnter a grade (0-100): 90\nGrade added!\nEnter your choice: 1\nEnter a grade (0-100): 75\nGrade added!\nEnter your choice: 3\nAverage grade: 82.50\nEnter your choice: 4\nHighest grade: 90\nLowest grade: 75"
+    },
+    {
+      "id": 7,
+      "question": "📝✅ **Task Manager Program**\n\nYour task is to write a program that manages a list of tasks with the following features:\n\n1. Show all tasks with their index numbers.\n2. Add a new task to the list.\n3. Delete a task by entering its number.\n4. Search for a task by keyword (case-insensitive).\n5. Edit an existing task by entering its number and the new value.\n6. Exit the program.\n\n**Input:**\n- User choice from the menu (1–6).\n- Strings for new or edited tasks.\n- Numbers for delete/edit operations.\n\n**Output:**\n- Displayed menu.\n- Tasks list with indexes.\n- Messages for successful add, edit, delete, or error if invalid input.\n- Search result message if found or not.\n",
+      "defaultCode": "def show_tasks(tasks):\n    if not tasks:\n        print(\"📭 No tasks available\")\n    else:\n        print(\"\\n📋 Your Tasks:\")\n        index = 1\n        for task in tasks:\n            print(f\"{index}. {task}\")\n            index += 1\n\ndef add_task(tasks):\n    new_task = input(\"Enter a new task: \")\n    tasks.append(new_task)\n    print(\"✅ Task added successfully\")\n\ndef delete_task(tasks):\n    show_tasks(tasks)\n    if tasks:\n        del_index = int(input(\"Enter the task number to delete: \")) - 1\n        if 0 <= del_index < len(tasks):\n            removed = tasks.pop(del_index)\n            print(f\"🗑️ Task deleted: {removed}\")\n        else:\n            print(\"❌ Invalid number\")\n\ndef search_task(tasks):\n    search = input(\"Enter the task name to search: \").lower()\n    found = False\n    for task in tasks:\n        if search in task.lower():\n            print(f\"🔍 Task found: {task}\")\n            found = True\n            break\n    if not found:\n        print(\"🚫 Task not found\")\n\ndef edit_task(tasks):\n    show_tasks(tasks)\n    if tasks:\n        edit_index = int(input(\"Enter the task number to edit: \")) - 1\n        if 0 <= edit_index < len(tasks):\n            new_value = input(\"Enter the new task: \")\n            tasks[edit_index] = new_value\n            print(\"✏️ Task updated successfully\")\n        else:\n            print(\"❌ Invalid number\")\n\ndef main():\n    tasks = []\n    while True:\n        print(\"\\n=== Task Manager ===\")\n        print(\"1. Show Tasks\")\n        print(\"2. Add Task\")\n        print(\"3. Delete Task\")\n        print(\"4. Search Task\")\n        print(\"5. Edit Task\")\n        print(\"6. Exit\")\n\n        choice = input(\"Choose an option: \")\n\n        if choice == '1':\n            show_tasks(tasks)\n        elif choice == '2':\n            add_task(tasks)\n        elif choice == '3':\n            delete_task(tasks)\n        elif choice == '4':\n            search_task(tasks)\n        elif choice == '5':\n            edit_task(tasks)\n        elif choice == '6':\n            print(\"👋 Exiting the program...\")\n            break\n        else:\n            print(\"⚠️ Invalid choice, please try again\")\n\n# Run the program\nmain()",
+      "output": "=== Task Manager ===\n1. Show Tasks\n2. Add Task\n3. Delete Task\n4. Search Task\n5. Edit Task\n6. Exit\n\nChoose an option: 2\nEnter a new task: Study React\n✅ Task added successfully\n\nChoose an option: 1\n1. Study React\n\nChoose an option: 4\nEnter the task name to search: react\n🔍 Task found: Study React\n\nChoose an option: 5\nEnter the task number to edit: 1\nEnter the new task: Study Python\n✏️ Task updated successfully\n\nChoose an option: 1\n1. Study Python\n\nChoose an option: 6\n👋 Exiting the program..."
     }
   ]
 }
