@@ -114,5 +114,114 @@
       "defaultCode": "",
       "output": "The flowchart should include:\n- Start and End\n- Input (if needed)\n- Decision (Yes/No)\n- Loop (repetition until a condition is met)"
     }
+  ],
+  "lec2": [
+    {
+      "id": 1,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that asks the user to enter a username and password. If both are correct, print 'Welcome'. If either one is incorrect, allow the user to try again up to 3 times. After 3 wrong attempts, print 'Account Locked'.",
+      "defaultCode": "",
+      "output": "Correct credentials → Welcome\n3 wrong attempts → Account Locked"
+    },
+    {
+      "id": 2,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that takes numbers from the user one by one and keeps adding them. The program should stop when the user enters 0, then print the total sum.",
+      "defaultCode": "",
+      "output": "Input: 5, 3, 2, 0 → Output: 10"
+    },
+    {
+      "id": 3,
+      "topic": "flowchart",
+      "question": "Draw a flowchart for a student grading system. The program takes a grade and prints:\n- Excellent if grade >= 85\n- Good if grade >= 65 and < 85\n- Pass if grade >= 50 and < 65\n- Fail if grade < 50",
+      "defaultCode": "",
+      "output": "Input: 90 → Excellent\nInput: 70 → Good\nInput: 55 → Pass\nInput: 40 → Fail"
+    },
+    {
+      "id": 4,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that asks the user to enter numbers continuously. If the number is even, print 'Even'. If it is odd, print 'Odd'. The program should stop only when the user enters -1.",
+      "defaultCode": "",
+      "output": "Input: 4 → Even\nInput: 7 → Odd\nInput: -1 → Stop"
+    },
+    {
+      "id": 5,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that simulates a simple ATM withdrawal process. The user enters a PIN. If the PIN is correct, ask for withdrawal amount. If the amount is less than or equal to the balance, withdraw the money and update the balance. Otherwise, print 'Insufficient balance'.",
+      "defaultCode": "",
+      "output": "Correct PIN + valid amount → Cash withdrawn\nAmount > balance → Insufficient balance"
+    },
+    {
+      "id": 6,
+      "topic": "write_code",
+      "question": "Write a program that asks the user for their first name, last name, birth year, and current city. Then, create a full introduction message that includes:\n1) Full name\n2) Name length (total number of characters)\n3) Age (assuming the current year is 2024)\n4) A message saying 'Welcome to [City]!'",
+      "defaultCode": "first_name = input(\"Enter your first name: \")\nlast_name = input(\"Enter your last name: \")\nbirth_year = int(input(\"Enter your birth year: \"))\ncity = input(\"Enter your city: \")\n# Your code here",
+      "output": "Enter your first name: Ali\nEnter your last name: Ahmed\nEnter your birth year: 2000\nEnter your city: Cairo\n---------------\nFull Name: Ali Ahmed\nName Length: 9\nAge: 24\nWelcome to Cairo!"
+    },
+    {
+      "id": 7,
+      "topic": "write_code",
+      "question": "Write a program that asks the user to enter three numbers. Then calculate and print:\n1) Their sum\n2) Their product\n3) Their average\n4) The largest number among them (with using max())\n5) The smallest number among them (with using min())",
+      "defaultCode": "num1 = float(input(\"Enter the first number: \"))\nnum2 = float(input(\"Enter the second number: \"))\nnum3 = float(input(\"Enter the third number: \"))\n# Your code here",
+      "output": "Enter the first number: 2\nEnter the second number: 5\nEnter the third number: 3\nSum: 10\nProduct: 30\nAverage: 3.3333333333333335\nLargest: 5\nSmallest: 2"
+    },
+    {
+      "id": 8,
+      "topic": "write_code",
+      "question": "Write a program that asks the user for two numbers, then calculates and prints:\n1) The sum, difference, product, division (/), integer division (//), modulus (%), and exponentiation (**)\n2) The result of adding 10 to the first number and subtracting 5 from the second number\n3) The average of the two numbers after modification",
+      "defaultCode": "a = float(input(\"Enter the first number: \"))\nb = float(input(\"Enter the second number: \"))\n# Your code here",
+      "output": "Enter the first number: 4\nEnter the second number: 2\nSum: 6\nDifference: 2\nProduct: 8\nDivision: 2.0\nFloor Division: 2\nModulus: 0\nPower: 16\nModified first number (a+10): 14\nModified second number (b-5): -3\nAverage after modification: 5.5"
+    },
+    {
+      "id": 9,
+      "topic": "write_code",
+      "question": "Write a program that asks the user for their name, age, and height in meters. Then print a structured message that includes:\n1) Name\n2) Age next year\n3) Height in meters\n4) Number of characters in the name\n5) A fun message that repeats the name twice, separated by a space",
+      "defaultCode": "name = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\nheight = float(input(\"Enter your height in meters: \"))\n# Your code here",
+      "output": "Enter your name: Sara\nEnter your age: 20\nEnter your height in meters: 1.65\nName: Sara\nAge next year: 21\nHeight: 1.65 meters\nName length: 4 characters\nFun: Sara Sara"
+    },
+    {
+      "id": 10,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "first_name = \"Ali\"\nlast_name = \"Ahmed\"\nfull_name = first_name + \" \" + last_name\nname_length = len(full_name)\nprint(full_name)\nprint(name_length)"
+    },
+    {
+      "id": 11,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "a = 10\nb = 3\nprint(a + b)\nprint(a / b)\nprint(a // b)\nprint(a % b)\nprint(a ** b)"
+    },
+    {
+      "id": 12,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "x = 5\ny = 2\nx += y\ny *= 3\nprint(x)\nprint(y)"
+    },
+    {
+      "id": 13,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "num1 = 7\nnum2 = 3\nnum3 = 10\naverage = (num1 + num2 + num3) / 3\nlargest = num1\nif num2 > largest:\n    largest = num2\nif num3 > largest:\n    largest = num3\nsmallest = num1\nif num2 < smallest:\n    smallest = num2\nif num3 < smallest:\n    smallest = num3\nprint(\"Average:\", average)\nprint(\"Largest:\", largest)\nprint(\"Smallest:\", smallest)"
+    },
+    {
+      "id": 14,
+      "topic": "theory",
+      "question": "What is the difference between an integer and a float in Python?"
+    },
+    {
+      "id": 15,
+      "topic": "theory",
+      "question": "Explain what the len() function does in Python and give an example."
+    },
+    {
+      "id": 16,
+      "topic": "theory",
+      "question": "What are the rules for naming variables in Python?"
+    },
+    {
+      "id": 17,
+      "topic": "theory",
+      "question": "What is the difference between a string and a number in Python? Give examples of each."
+    }
   ]
 }
