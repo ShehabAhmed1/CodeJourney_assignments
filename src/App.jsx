@@ -112,7 +112,7 @@ const App = () => {
                     </div>
 
                     {/* Code Editor Section */}
-                    <div className="bg-white rounded-xl shadow-sm p-4 mt-6">
+                    {/* <div className="bg-white rounded-xl shadow-sm p-4 mt-6">
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-2">
                           <Code className="w-5 min-h-5 text-green-600" />
@@ -133,7 +133,7 @@ const App = () => {
                           {currentQuestion.defaultCode}
                         </pre>
                       </div>
-                    </div>
+                    </div> */}
 
                     <button
                       onClick={() => handleShowAnswer(currentQuestion.id)}
