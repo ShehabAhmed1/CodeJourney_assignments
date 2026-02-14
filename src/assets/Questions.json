@@ -223,5 +223,43 @@
       "topic": "theory",
       "question": "What is the difference between a string and a number in Python? Give examples of each."
     }
+  ],
+  "lec3": [
+    {
+      "id": 1,
+      "question": "Write a Python program that converts variables x = '100', y = 50.5, z = 25 to integers and calculates the total, then prints it in the format 'Total = ...'.",
+      "defaultCode": "x = \"100\"\ny = 50.5\nz = 25\n\ntotal = int(x) + int(y) + z\nprint(\"Total =\", total)",
+      "output": "Total = 175"
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that prints the first 5 characters, the last 5 characters, and the middle characters (Python) from the string text = 'HelloPythonWorld'.",
+      "defaultCode": "text = \"HelloPythonWorld\"\n\nprint(text[:5])\nprint(text[-5:])\nprint(text[5:11])",
+      "output": "Hello\nWorld\nPython"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that concatenates two strings first = 'Python' and second = 'Rocks', then prints the full string, the first 6 characters, and the last 5 characters.",
+      "defaultCode": "first = 'Python'\nsecond = 'Rocks'\n\ncombined = first + second\nprint('Full:', combined)\nprint('First 6 chars:', combined[:6])\nprint('Last 5 chars:', combined[-5:])",
+      "output": "Full: PythonRocks\nFirst 6 chars: Python\nLast 5 chars: Rocks"
+    },
+    {
+      "id": 4,
+      "question": "Write a Python program that stores your name as a string variable and your age as a number, then prints: 'My name is ___ and I am ___ years old.'.",
+      "defaultCode": "name = 'Shehab'\nage = 22\n\nprint('My name is ' + name + ' and I am ' + str(age) + ' years old.')",
+      "output": "My name is Shehab and I am 22 years old."
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that converts a float number 15.9 into an integer, then back into a float, and prints all values in one line separated by commas with data types.",
+      "defaultCode": "num = 15.9\n\nint_num = int(num)\nfloat_num = float(int_num)\n\nprint(str(num) + ', ' + str(int_num) + ', ' + str(float_num))",
+      "output": "15.9 <class 'float'>, 15 <class 'int'>, 15.0  <class 'float'>"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that concatenates three strings a = 'Data', b = 'Type', c = 'Test', then prints the full string and prints characters from index 4 to 8.",
+      "defaultCode": "a = 'Data'\nb = 'Type'\nc = 'Test'\n\ncombined = a + b + c\nprint(combined)\nprint(combined[4:9])",
+      "output": "DataTypeTest\nTypeT"
+    }
   ]
 }
