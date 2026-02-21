@@ -261,5 +261,85 @@
       "defaultCode": "a = 'Data'\nb = 'Type'\nc = 'Test'\n\ncombined = a + b + c\nprint(combined)\nprint(combined[4:9])",
       "output": "DataTypeTest\nTypeT"
     }
+  ],
+  "lec4": [
+    {
+      "id": 1,
+      "question": "Write a Python program that prints the following sentence using escape characters: Shehab said: \"Python is awesome!\"",
+      "defaultCode": "print(\"Shehab said: \\\"Python is awesome!\\\"\")",
+      "output": "Shehab said: \"Python is awesome!\""
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that creates two variables: name = \"Ahmed\" and age = 22, then prints: My name is Ahmed and I am 22 years old using f-string.",
+      "defaultCode": "name = \"Ahmed\"\nage = 22\nprint(f\"My name is {name} and I am {age} years old\")",
+      "output": "My name is Ahmed and I am 22 years old"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that takes a string input from the user and prints the first character, last character, and length of the string.",
+      "defaultCode": "text = input()\nlength = len(text)\nprint(text[0])\nprint(text[-1])\nprint(length)",
+      "output": "Depends on input\nExample:\nInput: Python\nOutput:\nP\nn\n6"
+    },
+    {
+      "id": 4,
+      "question": "Given text = \"PythonProgramming\", print \"Python\" and \"Programming\" using slicing.",
+      "defaultCode": "text = \"PythonProgramming\"\nprint(text[:6])\nprint(text[6:])",
+      "output": "Python\nProgramming"
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that takes a string, converts it to uppercase, replaces spaces with underscores, and prints the result.",
+      "defaultCode": "text = input()\nresult = text.upper().replace(\" \", \"_\")\nprint(result)",
+      "output": "Depends on input\nExample:\nInput: hello world\nOutput:\nHELLO_WORLD"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that checks if a string ends with 'ing' and prints True or False.",
+      "defaultCode": "text = input()\nprint(text.endswith(\"ing\"))",
+      "output": "Depends on input\nExample:\nInput: coding\nOutput:\nTrue"
+    },
+    {
+      "id": 7,
+      "question": "Write a Python program that counts how many times the letter 'a' appears in a string.",
+      "defaultCode": "text = input()\nprint(text.count(\"a\"))",
+      "output": "Depends on input\nExample:\nInput: banana\nOutput:\n3"
+    },
+    {
+      "id": 8,
+      "question": "Write a Python program that reverses the order of words in a sentence. maybe you need search about reverse() function",
+      "defaultCode": "text = input()\nwords = text.split()\nwords.reverse()\nprint(\" \".join(words))",
+      "output": "Depends on input\nExample:\nInput: I love Python\nOutput:\nPython love I"
+    },
+    {
+      "id": 9,
+      "question": "Write a Python program that checks if a string is a palindrome.\n note: palindrome is a word that reads the same forwards and backwards like words (level, radar, rotor)",
+      "defaultCode": "text = input()\nprint(text == text[::-1])",
+      "output": "Depends on input\nExample:\nInput: level\nOutput:\nTrue"
+    },
+    {
+      "id": 10,
+      "question": "Write a Python program that checks if a string contains only alphabet letters (no digits or symbols). maybe you need search about isalpha() function and functions like it",
+      "defaultCode": "text = input()\nprint(text.isalpha())",
+      "output": "Depends on input\nExample:\nInput: Hello\nOutput:\nTrue"
+    },
+    {
+      "id": 11,
+      "question": "Write a Python program that asks the user to enter a sentence. The program should:\n1- Remove leading/trailing spaces.\n2- Count total characters (excluding spaces).\n3- Count number of words.\n4- Count how many vowels (a, e, i, o, u) are in the sentence.\n5- Print all results clearly formatted.",
+      "defaultCode": "sentence = input(\"Enter a sentence: \")\n\nsentence = sentence.strip()\n\nchar_count = len(sentence.replace(\" \", \"\"))\nwords = sentence.split()\nword_count = len(words)\n\nvowels = \"aeiouAEIOU\"\nvowel_count = 0\n\nfor ch in sentence:\n    if ch in vowels:\n        vowel_count += 1\n\nprint(\"Sentence after strip:\", sentence)\nprint(\"Characters (no spaces):\", char_count)\nprint(\"Word count:\", word_count)\nprint(\"Vowel count:\", vowel_count)",
+      "output": "Depends on input\nExample:\nInput:   Hello Python World   \nOutput:\nSentence after strip: Hello Python World\nCharacters (no spaces): 16\nWord count: 3\nVowel count: 5"
+    },
+    {
+      "id": 12,
+      "question": "Write a Python program that asks the user to enter their full name (first and last in one line). The program should:\n1- Remove extra spaces from both sides.\n2- Extract the first name and last name using slicing (not split).\n3- Print the name in this format: LastName - FIRSTNAME.\nHint: Assume there is exactly one space between first and last name after stripping.",
+      "defaultCode": "full_name = input(\"Enter full name: \").strip()\nspace_index = full_name.find(\" \")\n\nfirst_name = full_name[:space_index]\nlast_name = full_name[space_index+1:]\n\nprint(last_name + \" - \" + first_name.upper())",
+      "output": "Depends on input\nExample:\nInput:   shehab ahmed   \nOutput:\nAhmed - SHEHAB"
+    },
+    {
+      "id": 13,
+      "question": "Write a Python program that asks the user to enter a sentence. The program should:\n1- Convert it to lowercase.\n2- Remove all spaces.\n3- Print the first 3 characters.\n4- Print the last 3 characters.\n5- Print the sentence reversed.\nDo everything without using loops.",
+      "defaultCode": "text = input(\"Enter sentence: \").lower()\n\ntext_no_spaces = text.replace(\" \", \"\")\n\nprint(\"First 3:\", text_no_spaces[:3])\nprint(\"Last 3:\", text_no_spaces[-3:])\nprint(\"Reversed:\", text_no_spaces[::-1])",
+      "output": "Depends on input\nExample:\nInput: Hello World\nOutput:\nFirst 3: hel\nLast 3: rld\nReversed: dlrowolleh"
+    }
   ]
 }
