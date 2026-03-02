@@ -315,7 +315,7 @@
       "id": 9,
       "question": "Write a Python program that checks if a string is a palindrome.\n note: palindrome is a word that reads the same forwards and backwards like words (level, radar, rotor)",
       "defaultCode": "text = input()\nprint(text == text[::-1])",
-      "output": "Depends on input\nExample:\nInput: level\nOutput:\nTrue"
+      "output": "Input: level\nOutput:\nTrue"
     },
     {
       "id": 10,
@@ -340,6 +340,63 @@
       "question": "Write a Python program that asks the user to enter a sentence. The program should:\n1- Convert it to lowercase.\n2- Remove all spaces.\n3- Print the first 3 characters.\n4- Print the last 3 characters.\n5- Print the sentence reversed.\nDo everything without using loops.",
       "defaultCode": "text = input(\"Enter sentence: \").lower()\n\ntext_no_spaces = text.replace(\" \", \"\")\n\nprint(\"First 3:\", text_no_spaces[:3])\nprint(\"Last 3:\", text_no_spaces[-3:])\nprint(\"Reversed:\", text_no_spaces[::-1])",
       "output": "Depends on input\nExample:\nInput: Hello World\nOutput:\nFirst 3: hel\nLast 3: rld\nReversed: dlrowolleh"
+    }
+  ],
+  "lec5": [
+    {
+      "id": 1,
+      "question": "Write a Python program that removes the first and last characters of a given string.\n\nRequirements:\n- The input string will always have at least 2 characters.\n- If the string has exactly 2 characters, print an empty string.\n- If the string has 3 or more characters, remove the first and last character.",
+      "defaultCode": "text = input()\nif len(text) == 2:\n    print(\"\")\nelse:\n    print(text[1:-1])",
+      "output": "Input: country\nOutput: ountr"
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that checks if a number n is divisible by two numbers x AND y.\n\nRequirements:\n- All inputs are positive, non-zero numbers.\n- Print True if n is divisible by both x and y.\n- Otherwise, print False.",
+      "defaultCode": "n = int(input())\nx = int(input())\ny = int(input())\n\nprint(n % x == 0 and n % y == 0)",
+      "output": "Input:\nn:12\nx:2\ny:6\nOutput:\nTrue"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that takes a year as input and prints the century it belongs to.\n\nNote:\n- The first century is from year 1 to 100.\n- The second century is from 101 to 200.\n- If the year ends with 00, it belongs to that exact century.\n- Otherwise, add 1 to (year // 100).",
+      "defaultCode": "year = int(input())\n\nif year % 100 == 0:\n    print(year // 100)\nelse:\n    print(year // 100 + 1)",
+      "output": "Input: 1705\nOutput: 18"
+    },
+    {
+      "id": 4,
+      "question": "Write a Python program that takes a non-negative integer n and a string s as input, and prints the string s repeated exactly n times.",
+      "defaultCode": "n = int(input())\ns = input()\n\nprint(s * n)",
+      "output": "Input:\nn:5\ns:Hello\nOutput:\nHelloHelloHelloHelloHello"
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that takes a string as input, removes all spaces from it, then prints the resulting string.",
+      "defaultCode": "text = input()\n\nprint(text.replace(\" \", \"\"))",
+      "output": "Input: 8 j 8   mBliB8g  imjB8B8  jl  B\nOutput: 8j8mBliB8gimjB8B8jlB"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that takes the number of hours Ahmed has been cycling and prints how many liters of water he should drink.\n\nNote:\n- Ahmed drinks 0.5 liters of water per hour.\n- The result should be rounded down to the nearest whole number.",
+      "defaultCode": "time = float(input())\n\nlitres = int(time * 0.5)\nprint(litres)",
+      "output": "Input: 6.7\nOutput: 3"
+    },
+
+    {
+      "id": 7,
+      "question": "Write a Python program that simulates a university admission system.\n\nThe user enters:\n- Name\n- Math grade\n- English grade\n- Programming grade\n\nThe program should:\n- Calculate the average.\n- If programming grade is less than 50 → print \"Rejected\" directly.\n- If average >= 90 → \"Full Scholarship\"\n- If average >= 75 and < 90 → \"Regular Admission\"\n- If average >= 60 and < 75 → \"Waiting List\"\n- Otherwise → \"Rejected\"\n- Print the type of each grade using type().",
+      "defaultCode": "name = input()\nmath = float(input())\nenglish = float(input())\nprogramming = float(input())\n\naverage = (math + english + programming) / 3\n\nif programming < 50:\n    result = \"Rejected\"\nelif average >= 90:\n    result = \"Full Scholarship\"\nelif average >= 75:\n    result = \"Regular Admission\"\nelif average >= 60:\n    result = \"Waiting List\"\nelse:\n    result = \"Rejected\"\n\nprint(f\"Average: {average}\")\nprint(f\"Result: {result}\")\nprint(type(math))\nprint(type(english))\nprint(type(programming))",
+      "output": "Input:\nname: Ali\nmath: 85\nenglish: 80\nprogramming: 90\nOutput:\nAverage: 85.0\nResult: Regular Admission\n<class 'float'>\n<class 'float'>\n<class 'float'>"
+    },
+    {
+      "id": 8,
+      "question": "Write a Python program that asks the user to enter a sentence.\n\nThe program should:\n- Print the length of the sentence.\n- Print the first 5 characters.\n- Print the last 5 characters.\n- Convert the sentence to uppercase and lowercase.\n\nThen check the following conditions:\n1) If the sentence starts with a capital letter AND ends with an exclamation mark → print \"Perfect sentence!\".\n2) If the sentence starts with a capital letter only → print \"Good start!\".\n3) If the sentence ends with an exclamation mark only → print \"Exciting sentence!\".\n4) Otherwise → print \"Try to improve your sentence.\"",
+      "defaultCode": "sentence = input()\n\nlength = len(sentence)\nfirst_part = sentence[:5]\nlast_part = sentence[-5:]\n\nupper_case = sentence.upper()\nlower_case = sentence.lower()\nreplaced = sentence.replace(\"python\", \"PYTHON LANGUAGE\")\n\ncontains_python = \"python\" in sentence.lower()\nstarts_capital = sentence[0].isupper()\nends_exclamation = sentence.endswith(\"!\")\n\nprint(length)\nprint(first_part)\nprint(last_part)\nprint(upper_case)\nprint(lower_case)\nprint(replaced)\n\nif contains_python and ends_exclamation:\n    print(\"Excited about Python!\")\nelif contains_python:\n    print(\"Mentions Python\")\nelse:\n    print(\"No Python found\")",
+      "output": "Input: Python is amazing!\nOutput:\n length: 18\nfirst_part: Pytho\nlast_part: zing!\nupper_case: PYTHON IS AMAZING!\nlower_case: python is amazing!\nsentence: Perfect sentence!"
+    },
+    {
+      "id": 9,
+      "question": "Write a Python program that calculates a shopping bill.\n\nThe user enters:\n- Product name\n- Product price\n- If they have a discount code (yes/no)\n- Discount percentage (if yes)\n\nThe program should:\n- Add 14% tax if price is greater than 1000.\n- Apply discount if user has a code.\n- If final price is greater than 500 → print \"You get a gift\".\n- If final price is less than 100 → print \"Low total amount\".\n- Print a formatted summary of the bill.",
+      "defaultCode": "product = input()\nprice = float(input())\nhas_code = input().strip().lower()\n\nif price > 1000:\n    price = price + (price * 0.14)\n\nif has_code == \"yes\":\n    discount = float(input())\n    price = price - (price * discount / 100)\n\nprint(f\"Product: {product}\")\nprint(f\"Final Price: {price}\")\n\nif price > 500:\n    print(\"You get a gift\")\nelif price < 100:\n    print(\"Low total amount\")",
+      "output": "Input:\n product: Laptop\nprice: 1200\nhas_code: yes\ndiscount: 10\nOutput:\nProduct: Laptop\nFinal Price: 1368.0\nYou get a gift"
     }
   ]
 }
