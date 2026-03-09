@@ -248,3 +248,547 @@
     }
   ]
 }
+
+{
+  "lec1": [
+    {
+      "id": 1,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that asks the user to enter a username and password, then prints 'Welcome' if both are correct, otherwise prints 'Try again'.",
+      "defaultCode": "",
+      "output": "If username and password are correct → Welcome\nElse → Try again"
+    },
+    {
+      "id": 2,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that checks if a number is even or odd. \n note: read about this % symbol",
+      "defaultCode": "",
+      "output": "Input: 4 → Even\nInput: 7 → Odd"
+    },
+    {
+      "id": 3,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that takes a student's grade and prints Pass if the grade is 50 or more, otherwise Fail.",
+      "defaultCode": "",
+      "output": "Input: 75 → Pass\nInput: 40 → Fail"
+    },
+    {
+      "id": 4,
+      "topic": "flowchart",
+      "question": "Explain the difference between oval, rectangle, and diamond shapes in a flowchart.",
+      "defaultCode": "",
+      "output": "...."
+    },
+    {
+      "id": 5,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that prints numbers from 1 to 5.",
+      "defaultCode": "",
+      "output": "1 2 3 4 5"
+    },
+
+    {
+      "id": 6,
+      "topic": "print/input",
+      "question": "Write a program that asks the user to enter their name and prints Hello with their name.",
+      "defaultCode": "name = input(\"Enter your name: \")\nprint(\"Hello\", name)",
+      "output": "Enter your name: Ali\nHello Ali"
+    },
+    {
+      "id": 7,
+      "topic": "print/input",
+      "question": "What is the difference between print(\"5\") and print(5)?",
+      "defaultCode": "print(\"5\")\nprint(5)",
+      "output": "..."
+    },
+    {
+      "id": 8,
+      "topic": "print/input",
+      "question": "Write a program that takes a number from the user and prints the number multiplied by 2.",
+      "defaultCode": "num = int(input(\"Enter a number: \"))\nprint(num * 2)",
+      "output": "Enter a number: 6\n12"
+    },
+    {
+      "id": 9,
+      "topic": "print/input",
+      "question": "Fix the error in this code => \n  name = input(\"Enter your name\")\nprint(\"Hello\" name)",
+      "defaultCode": "name = input(\"Enter your name\")\nprint(\"Hello\" name)",
+      "output": "......."
+    },
+    {
+      "id": 10,
+      "topic": "print/input",
+      "question": "Write a program that asks the user for their age and prints it.",
+      "defaultCode": "age = input(\"Enter your age: \")\nprint(\"Your age is:\", age)",
+      "output": "Enter your age: 20\nYour age is: 20"
+    },
+
+    {
+      "id": 11,
+      "topic": "variables",
+      "question": "What is a variable in Python? explain with an example",
+      "defaultCode": "x = 10",
+      "output": "..."
+    },
+    {
+      "id": 12,
+      "topic": "variables",
+      "question": "What will be the output of this code? => \n x = 10\nx = 5\nprint(y)",
+      "defaultCode": "x = 10\nx = 5\nprint(x)",
+      "output": "...."
+    },
+    {
+      "id": 13,
+      "topic": "variables",
+      "question": "Is this variable name correct? Why? => 1name = \"Ali\"",
+      "defaultCode": "1name = \"Ali\"",
+      "output": "...."
+    },
+    {
+      "id": 14,
+      "topic": "variables",
+      "question": "Write a program that stores two numbers in variables and prints their sum.",
+      "defaultCode": "a = 3\nb = 4\nprint(a + b)",
+      "output": "7"
+    },
+    {
+      "id": 15,
+      "topic": "variables",
+      "question": "Is age = \"20\" a number or text? Explain.",
+      "defaultCode": "age = \"20\"",
+      "output": "...."
+    },
+    {
+      "id": 16,
+      "topic": "flowchart",
+      "question": "Choose a real-life situation from your daily life (for example: studying, waking up, charging your phone, waiting for the bus). Draw a flowchart for this situation. Your flowchart must include at least one condition (decision) and one loop (repetition).",
+      "defaultCode": "",
+      "output": "The flowchart should include:\n- Start and End\n- Input (if needed)\n- Decision (Yes/No)\n- Loop (repetition until a condition is met)"
+    }
+  ],
+  "lec2": [
+    {
+      "id": 1,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that asks the user to enter a username and password. If both are correct, print 'Welcome'. If either one is incorrect, allow the user to try again up to 3 times. After 3 wrong attempts, print 'Account Locked'.",
+      "defaultCode": "",
+      "output": "Correct credentials → Welcome\n3 wrong attempts → Account Locked"
+    },
+    {
+      "id": 2,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that takes numbers from the user one by one and keeps adding them. The program should stop when the user enters 0, then print the total sum.",
+      "defaultCode": "",
+      "output": "Input: 5, 3, 2, 0 → Output: 10"
+    },
+    {
+      "id": 3,
+      "topic": "flowchart",
+      "question": "Draw a flowchart for a student grading system. The program takes a grade and prints:\n- Excellent if grade >= 85\n- Good if grade >= 65 and < 85\n- Pass if grade >= 50 and < 65\n- Fail if grade < 50",
+      "defaultCode": "",
+      "output": "Input: 90 → Excellent\nInput: 70 → Good\nInput: 55 → Pass\nInput: 40 → Fail"
+    },
+    {
+      "id": 4,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that asks the user to enter numbers continuously. If the number is even, print 'Even'. If it is odd, print 'Odd'. The program should stop only when the user enters -1.",
+      "defaultCode": "",
+      "output": "Input: 4 → Even\nInput: 7 → Odd\nInput: -1 → Stop"
+    },
+    {
+      "id": 5,
+      "topic": "flowchart",
+      "question": "Draw a flowchart that simulates a simple ATM withdrawal process. The user enters a PIN. If the PIN is correct, ask for withdrawal amount. If the amount is less than or equal to the balance, withdraw the money and update the balance. Otherwise, print 'Insufficient balance'.",
+      "defaultCode": "",
+      "output": "Correct PIN + valid amount → Cash withdrawn\nAmount > balance → Insufficient balance"
+    },
+    {
+      "id": 6,
+      "topic": "write_code",
+      "question": "Write a program that asks the user for their first name, last name, birth year, and current city. Then, create a full introduction message that includes:\n1) Full name\n2) Name length (total number of characters)\n3) Age (assuming the current year is 2024)\n4) A message saying 'Welcome to [City]!'",
+      "defaultCode": "first_name = input(\"Enter your first name: \")\nlast_name = input(\"Enter your last name: \")\nbirth_year = int(input(\"Enter your birth year: \"))\ncity = input(\"Enter your city: \")\n# Your code here",
+      "output": "Enter your first name: Ali\nEnter your last name: Ahmed\nEnter your birth year: 2000\nEnter your city: Cairo\n---------------\nFull Name: Ali Ahmed\nName Length: 9\nAge: 24\nWelcome to Cairo!"
+    },
+    {
+      "id": 7,
+      "topic": "write_code",
+      "question": "Write a program that asks the user to enter three numbers. Then calculate and print:\n1) Their sum\n2) Their product\n3) Their average\n4) The largest number among them (with using max())\n5) The smallest number among them (with using min())",
+      "defaultCode": "num1 = float(input(\"Enter the first number: \"))\nnum2 = float(input(\"Enter the second number: \"))\nnum3 = float(input(\"Enter the third number: \"))\n# Your code here",
+      "output": "Enter the first number: 2\nEnter the second number: 5\nEnter the third number: 3\nSum: 10\nProduct: 30\nAverage: 3.3333333333333335\nLargest: 5\nSmallest: 2"
+    },
+    {
+      "id": 8,
+      "topic": "write_code",
+      "question": "Write a program that asks the user for two numbers, then calculates and prints:\n1) The sum, difference, product, division (/), integer division (//), modulus (%), and exponentiation (**)\n2) The result of adding 10 to the first number and subtracting 5 from the second number\n3) The average of the two numbers after modification",
+      "defaultCode": "a = float(input(\"Enter the first number: \"))\nb = float(input(\"Enter the second number: \"))\n# Your code here",
+      "output": "Enter the first number: 4\nEnter the second number: 2\nSum: 6\nDifference: 2\nProduct: 8\nDivision: 2.0\nFloor Division: 2\nModulus: 0\nPower: 16\nModified first number (a+10): 14\nModified second number (b-5): -3\nAverage after modification: 5.5"
+    },
+    {
+      "id": 9,
+      "topic": "write_code",
+      "question": "Write a program that asks the user for their name, age, and height in meters. Then print a structured message that includes:\n1) Name\n2) Age next year\n3) Height in meters\n4) Number of characters in the name\n5) A fun message that repeats the name twice, separated by a space",
+      "defaultCode": "name = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\nheight = float(input(\"Enter your height in meters: \"))\n# Your code here",
+      "output": "Enter your name: Sara\nEnter your age: 20\nEnter your height in meters: 1.65\nName: Sara\nAge next year: 21\nHeight: 1.65 meters\nName length: 4 characters\nFun: Sara Sara"
+    },
+    {
+      "id": 10,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "first_name = \"Ali\"\nlast_name = \"Ahmed\"\nfull_name = first_name + \" \" + last_name\nname_length = len(full_name)\nprint(full_name)\nprint(name_length)"
+    },
+    {
+      "id": 11,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "a = 10\nb = 3\nprint(a + b)\nprint(a / b)\nprint(a // b)\nprint(a % b)\nprint(a ** b)"
+    },
+    {
+      "id": 12,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "x = 5\ny = 2\nx += y\ny *= 3\nprint(x)\nprint(y)"
+    },
+    {
+      "id": 13,
+      "topic": "write_code",
+      "question": "Predict the output of the following code:",
+      "output": "num1 = 7\nnum2 = 3\nnum3 = 10\naverage = (num1 + num2 + num3) / 3\nlargest = num1\nif num2 > largest:\n    largest = num2\nif num3 > largest:\n    largest = num3\nsmallest = num1\nif num2 < smallest:\n    smallest = num2\nif num3 < smallest:\n    smallest = num3\nprint(\"Average:\", average)\nprint(\"Largest:\", largest)\nprint(\"Smallest:\", smallest)"
+    },
+    {
+      "id": 14,
+      "topic": "theory",
+      "question": "What is the difference between an integer and a float in Python?"
+    },
+    {
+      "id": 15,
+      "topic": "theory",
+      "question": "Explain what the len() function does in Python and give an example."
+    },
+    {
+      "id": 16,
+      "topic": "theory",
+      "question": "What are the rules for naming variables in Python?"
+    },
+    {
+      "id": 17,
+      "topic": "theory",
+      "question": "What is the difference between a string and a number in Python? Give examples of each."
+    }
+  ],
+  "lec3": [
+    {
+      "id": 1,
+      "question": "Write a Python program that converts variables x = '100', y = 50.5, z = 25 to integers and calculates the total, then prints it in the format 'Total = ...'.",
+      "defaultCode": "x = \"100\"\ny = 50.5\nz = 25\n\ntotal = int(x) + int(y) + z\nprint(\"Total =\", total)",
+      "output": "Total = 175"
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that prints the first 5 characters, the last 5 characters, and the middle characters (Python) from the string text = 'HelloPythonWorld'.",
+      "defaultCode": "text = \"HelloPythonWorld\"\n\nprint(text[:5])\nprint(text[-5:])\nprint(text[5:11])",
+      "output": "Hello\nWorld\nPython"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that concatenates two strings first = 'Python' and second = 'Rocks', then prints the full string, the first 6 characters, and the last 5 characters.",
+      "defaultCode": "first = 'Python'\nsecond = 'Rocks'\n\ncombined = first + second\nprint('Full:', combined)\nprint('First 6 chars:', combined[:6])\nprint('Last 5 chars:', combined[-5:])",
+      "output": "Full: PythonRocks\nFirst 6 chars: Python\nLast 5 chars: Rocks"
+    },
+    {
+      "id": 4,
+      "question": "Write a Python program that stores your name as a string variable and your age as a number, then prints: 'My name is ___ and I am ___ years old.'.",
+      "defaultCode": "name = 'Shehab'\nage = 22\n\nprint('My name is ' + name + ' and I am ' + str(age) + ' years old.')",
+      "output": "My name is Shehab and I am 22 years old."
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that converts a float number 15.9 into an integer, then back into a float, and prints all values in one line separated by commas with data types.",
+      "defaultCode": "num = 15.9\n\nint_num = int(num)\nfloat_num = float(int_num)\n\nprint(str(num) + ', ' + str(int_num) + ', ' + str(float_num))",
+      "output": "15.9 <class 'float'>, 15 <class 'int'>, 15.0  <class 'float'>"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that concatenates three strings a = 'Data', b = 'Type', c = 'Test', then prints the full string and prints characters from index 4 to 8.",
+      "defaultCode": "a = 'Data'\nb = 'Type'\nc = 'Test'\n\ncombined = a + b + c\nprint(combined)\nprint(combined[4:9])",
+      "output": "DataTypeTest\nTypeT"
+    }
+  ],
+  "lec4": [
+    {
+      "id": 1,
+      "question": "Write a Python program that prints the following sentence using escape characters: Shehab said: \"Python is awesome!\"",
+      "defaultCode": "print(\"Shehab said: \\\"Python is awesome!\\\"\")",
+      "output": "Shehab said: \"Python is awesome!\""
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that creates two variables: name = \"Ahmed\" and age = 22, then prints: My name is Ahmed and I am 22 years old using f-string.",
+      "defaultCode": "name = \"Ahmed\"\nage = 22\nprint(f\"My name is {name} and I am {age} years old\")",
+      "output": "My name is Ahmed and I am 22 years old"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that takes a string input from the user and prints the first character, last character, and length of the string.",
+      "defaultCode": "text = input()\nlength = len(text)\nprint(text[0])\nprint(text[-1])\nprint(length)",
+      "output": "Depends on input\nExample:\nInput: Python\nOutput:\nP\nn\n6"
+    },
+    {
+      "id": 4,
+      "question": "Given text = \"PythonProgramming\", print \"Python\" and \"Programming\" using slicing.",
+      "defaultCode": "text = \"PythonProgramming\"\nprint(text[:6])\nprint(text[6:])",
+      "output": "Python\nProgramming"
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that takes a string, converts it to uppercase, replaces spaces with underscores, and prints the result.",
+      "defaultCode": "text = input()\nresult = text.upper().replace(\" \", \"_\")\nprint(result)",
+      "output": "Depends on input\nExample:\nInput: hello world\nOutput:\nHELLO_WORLD"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that checks if a string ends with 'ing' and prints True or False.",
+      "defaultCode": "text = input()\nprint(text.endswith(\"ing\"))",
+      "output": "Depends on input\nExample:\nInput: coding\nOutput:\nTrue"
+    },
+    {
+      "id": 7,
+      "question": "Write a Python program that counts how many times the letter 'a' appears in a string.",
+      "defaultCode": "text = input()\nprint(text.count(\"a\"))",
+      "output": "Depends on input\nExample:\nInput: banana\nOutput:\n3"
+    },
+    {
+      "id": 8,
+      "question": "Write a Python program that reverses the order of words in a sentence. maybe you need search about reverse() function",
+      "defaultCode": "text = input()\nwords = text.split()\nwords.reverse()\nprint(\" \".join(words))",
+      "output": "Depends on input\nExample:\nInput: I love Python\nOutput:\nPython love I"
+    },
+    {
+      "id": 9,
+      "question": "Write a Python program that checks if a string is a palindrome.\n note: palindrome is a word that reads the same forwards and backwards like words (level, radar, rotor)",
+      "defaultCode": "text = input()\nprint(text == text[::-1])",
+      "output": "Input: level\nOutput:\nTrue"
+    },
+    {
+      "id": 10,
+      "question": "Write a Python program that checks if a string contains only alphabet letters (no digits or symbols). maybe you need search about isalpha() function and functions like it",
+      "defaultCode": "text = input()\nprint(text.isalpha())",
+      "output": "Depends on input\nExample:\nInput: Hello\nOutput:\nTrue"
+    },
+    {
+      "id": 11,
+      "question": "Write a Python program that asks the user to enter a sentence. The program should:\n1- Remove leading/trailing spaces.\n2- Count total characters (excluding spaces).\n3- Count number of words.\n4- Count how many vowels (a, e, i, o, u) are in the sentence.\n5- Print all results clearly formatted.",
+      "defaultCode": "sentence = input(\"Enter a sentence: \")\n\nsentence = sentence.strip()\n\nchar_count = len(sentence.replace(\" \", \"\"))\nwords = sentence.split()\nword_count = len(words)\n\nvowels = \"aeiouAEIOU\"\nvowel_count = 0\n\nfor ch in sentence:\n    if ch in vowels:\n        vowel_count += 1\n\nprint(\"Sentence after strip:\", sentence)\nprint(\"Characters (no spaces):\", char_count)\nprint(\"Word count:\", word_count)\nprint(\"Vowel count:\", vowel_count)",
+      "output": "Depends on input\nExample:\nInput:   Hello Python World   \nOutput:\nSentence after strip: Hello Python World\nCharacters (no spaces): 16\nWord count: 3\nVowel count: 5"
+    },
+    {
+      "id": 12,
+      "question": "Write a Python program that asks the user to enter their full name (first and last in one line). The program should:\n1- Remove extra spaces from both sides.\n2- Extract the first name and last name using slicing (not split).\n3- Print the name in this format: LastName - FIRSTNAME.\nHint: Assume there is exactly one space between first and last name after stripping.",
+      "defaultCode": "full_name = input(\"Enter full name: \").strip()\nspace_index = full_name.find(\" \")\n\nfirst_name = full_name[:space_index]\nlast_name = full_name[space_index+1:]\n\nprint(last_name + \" - \" + first_name.upper())",
+      "output": "Depends on input\nExample:\nInput:   shehab ahmed   \nOutput:\nAhmed - SHEHAB"
+    },
+    {
+      "id": 13,
+      "question": "Write a Python program that asks the user to enter a sentence. The program should:\n1- Convert it to lowercase.\n2- Remove all spaces.\n3- Print the first 3 characters.\n4- Print the last 3 characters.\n5- Print the sentence reversed.\nDo everything without using loops.",
+      "defaultCode": "text = input(\"Enter sentence: \").lower()\n\ntext_no_spaces = text.replace(\" \", \"\")\n\nprint(\"First 3:\", text_no_spaces[:3])\nprint(\"Last 3:\", text_no_spaces[-3:])\nprint(\"Reversed:\", text_no_spaces[::-1])",
+      "output": "Depends on input\nExample:\nInput: Hello World\nOutput:\nFirst 3: hel\nLast 3: rld\nReversed: dlrowolleh"
+    }
+  ],
+  "lec5": [
+    {
+      "id": 1,
+      "question": "Write a Python program that removes the first and last characters of a given string.\n\nRequirements:\n- The input string will always have at least 2 characters.\n- If the string has exactly 2 characters, print an empty string.\n- If the string has 3 or more characters, remove the first and last character.",
+      "defaultCode": "text = input()\nif len(text) == 2:\n    print(\"\")\nelse:\n    print(text[1:-1])",
+      "output": "Input: country\nOutput: ountr"
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that checks if a number n is divisible by two numbers x AND y.\n\nRequirements:\n- All inputs are positive, non-zero numbers.\n- Print True if n is divisible by both x and y.\n- Otherwise, print False.",
+      "defaultCode": "n = int(input())\nx = int(input())\ny = int(input())\n\nprint(n % x == 0 and n % y == 0)",
+      "output": "Input:\nn:12\nx:2\ny:6\nOutput:\nTrue"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that takes a year as input and prints the century it belongs to.\n\nNote:\n- The first century is from year 1 to 100.\n- The second century is from 101 to 200.\n- If the year ends with 00, it belongs to that exact century.\n- Otherwise, add 1 to (year // 100).",
+      "defaultCode": "year = int(input())\n\nif year % 100 == 0:\n    print(year // 100)\nelse:\n    print(year // 100 + 1)",
+      "output": "Input: 1705\nOutput: 18"
+    },
+    {
+      "id": 4,
+      "question": "Write a Python program that takes a non-negative integer n and a string s as input, and prints the string s repeated exactly n times.",
+      "defaultCode": "n = int(input())\ns = input()\n\nprint(s * n)",
+      "output": "Input:\nn:5\ns:Hello\nOutput:\nHelloHelloHelloHelloHello"
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that takes a string as input, removes all spaces from it, then prints the resulting string.",
+      "defaultCode": "text = input()\n\nprint(text.replace(\" \", \"\"))",
+      "output": "Input: 8 j 8   mBliB8g  imjB8B8  jl  B\nOutput: 8j8mBliB8gimjB8B8jlB"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that takes the number of hours Ahmed has been cycling and prints how many liters of water he should drink.\n\nNote:\n- Ahmed drinks 0.5 liters of water per hour.\n- The result should be rounded down to the nearest whole number.",
+      "defaultCode": "time = float(input())\n\nlitres = int(time * 0.5)\nprint(litres)",
+      "output": "Input: 6.7\nOutput: 3"
+    },
+
+    {
+      "id": 7,
+      "question": "Write a Python program that simulates a university admission system.\n\nThe user enters:\n- Name\n- Math grade\n- English grade\n- Programming grade\n\nThe program should:\n- Calculate the average.\n- If programming grade is less than 50 → print \"Rejected\" directly.\n- If average >= 90 → \"Full Scholarship\"\n- If average >= 75 and < 90 → \"Regular Admission\"\n- If average >= 60 and < 75 → \"Waiting List\"\n- Otherwise → \"Rejected\"\n- Print the type of each grade using type().",
+      "defaultCode": "name = input()\nmath = float(input())\nenglish = float(input())\nprogramming = float(input())\n\naverage = (math + english + programming) / 3\n\nif programming < 50:\n    result = \"Rejected\"\nelif average >= 90:\n    result = \"Full Scholarship\"\nelif average >= 75:\n    result = \"Regular Admission\"\nelif average >= 60:\n    result = \"Waiting List\"\nelse:\n    result = \"Rejected\"\n\nprint(f\"Average: {average}\")\nprint(f\"Result: {result}\")\nprint(type(math))\nprint(type(english))\nprint(type(programming))",
+      "output": "Input:\nname: Ali\nmath: 85\nenglish: 80\nprogramming: 90\nOutput:\nAverage: 85.0\nResult: Regular Admission\n<class 'float'>\n<class 'float'>\n<class 'float'>"
+    },
+    {
+      "id": 8,
+      "question": "Write a Python program that asks the user to enter a sentence.\n\nThe program should:\n- Print the length of the sentence.\n- Print the first 5 characters.\n- Print the last 5 characters.\n- Convert the sentence to uppercase and lowercase.\n\nThen check the following conditions:\n1) If the sentence starts with a capital letter AND ends with an exclamation mark → print \"Perfect sentence!\".\n2) If the sentence starts with a capital letter only → print \"Good start!\".\n3) If the sentence ends with an exclamation mark only → print \"Exciting sentence!\".\n4) Otherwise → print \"Try to improve your sentence.\"",
+      "defaultCode": "sentence = input()\n\nlength = len(sentence)\nfirst_part = sentence[:5]\nlast_part = sentence[-5:]\n\nupper_case = sentence.upper()\nlower_case = sentence.lower()\nreplaced = sentence.replace(\"python\", \"PYTHON LANGUAGE\")\n\ncontains_python = \"python\" in sentence.lower()\nstarts_capital = sentence[0].isupper()\nends_exclamation = sentence.endswith(\"!\")\n\nprint(length)\nprint(first_part)\nprint(last_part)\nprint(upper_case)\nprint(lower_case)\nprint(replaced)\n\nif contains_python and ends_exclamation:\n    print(\"Excited about Python!\")\nelif contains_python:\n    print(\"Mentions Python\")\nelse:\n    print(\"No Python found\")",
+      "output": "Input: Python is amazing!\nOutput:\n length: 18\nfirst_part: Pytho\nlast_part: zing!\nupper_case: PYTHON IS AMAZING!\nlower_case: python is amazing!\nsentence: Perfect sentence!"
+    },
+    {
+      "id": 9,
+      "question": "Write a Python program that calculates a shopping bill.\n\nThe user enters:\n- Product name\n- Product price\n- If they have a discount code (yes/no)\n- Discount percentage (if yes)\n\nThe program should:\n- Add 14% tax if price is greater than 1000.\n- Apply discount if user has a code.\n- If final price is greater than 500 → print \"You get a gift\".\n- If final price is less than 100 → print \"Low total amount\".\n- Print a formatted summary of the bill.",
+      "defaultCode": "product = input()\nprice = float(input())\nhas_code = input().strip().lower()\n\nif price > 1000:\n    price = price + (price * 0.14)\n\nif has_code == \"yes\":\n    discount = float(input())\n    price = price - (price * discount / 100)\n\nprint(f\"Product: {product}\")\nprint(f\"Final Price: {price}\")\n\nif price > 500:\n    print(\"You get a gift\")\nelif price < 100:\n    print(\"Low total amount\")",
+      "output": "Input:\n product: Laptop\nprice: 1200\nhas_code: yes\ndiscount: 10\nOutput:\nProduct: Laptop\nFinal Price: 1368.0\nYou get a gift"
+    }
+  ],
+  "lec6":[
+{
+"id": 1,
+"question": "Write a Python program that reads a student's name and three exam scores. Calculate the average score. If the average is greater than or equal to 90 print \"Excellent\", if it is between 70 and 89 print \"Good\", otherwise print \"Needs Improvement\". Print the student's name and average.",
+"defaultCode": "name = input()\ns1 = float(input())\ns2 = float(input())\ns3 = float(input())\n\navg = (s1 + s2 + s3) / 3\n\nprint(f\"Student: {name}\")\nprint(f\"Average: {avg}\")\n\nif avg >= 90:\n    print(\"Excellent\")\nelif avg >= 70:\n    print(\"Good\")\nelse:\n    print(\"Needs Improvement\")",
+"output": "Input:\nAli\n90\n80\n100\nOutput:\nStudent: Ali\nAverage: 90.0\nExcellent"
+},
+
+{
+"id": 2,
+"question": "Write a Python program that reads a number from the user. If the number is even print \"Even Number\" otherwise print \"Odd Number\". If the number is greater than 100 also print \"Large Number\".",
+"defaultCode": "num = int(input())\n\nif num % 2 == 0:\n    print(\"Even Number\")\nelse:\n    print(\"Odd Number\")\n\nif num > 100:\n    print(\"Large Number\")",
+"output": "Input:\n120\nOutput:\nEven Number\nLarge Number"
+},
+
+{
+"id": 3,
+"question": "Write a Python program that asks for a username and password. If the username is \"admin\" and the password is \"1234\" print \"Login Successful\" otherwise print \"Invalid Credentials\".",
+"defaultCode": "username = input()\npassword = input()\n\nif username == \"admin\" and password == \"1234\":\n    print(\"Login Successful\")\nelse:\n    print(\"Invalid Credentials\")",
+"output": "Input:\nadmin\n1234\nOutput:\nLogin Successful"
+},
+
+{
+"id": 4,
+"question": "Write a Python program that reads a temperature in Celsius and converts it to Fahrenheit. If the temperature is below 0 print \"Freezing Weather\". Print both values.",
+"defaultCode": "c = float(input())\nf = (c * 9/5) + 32\n\nprint(f\"Celsius: {c}\")\nprint(f\"Fahrenheit: {f}\")\n\nif c < 0:\n    print(\"Freezing Weather\")",
+"output": "Input:\n-5\nOutput:\nCelsius: -5.0\nFahrenheit: 23.0\nFreezing Weather"
+},
+
+{
+"id": 5,
+"question": "Write a Python program that reads a string and prints its length. If the length is greater than 10 print \"Long Text\" otherwise print \"Short Text\".",
+"defaultCode": "text = input()\n\nlength = len(text)\n\nprint(f\"Length: {length}\")\n\nif length > 10:\n    print(\"Long Text\")\nelse:\n    print(\"Short Text\")",
+"output": "Input:\nHelloWorldPython\nOutput:\nLength: 16\nLong Text"
+},
+
+{
+"id": 6,
+"question": "Write a Python program that reads a name and age. If age is less than 18 print \"Minor\", otherwise print \"Adult\". Also print a welcome message using formatted output.",
+"defaultCode": "name = input()\nage = int(input())\n\nprint(f\"Welcome {name}\")\n\nif age < 18:\n    print(\"Minor\")\nelse:\n    print(\"Adult\")",
+"output": "Input:\nSara\n17\nOutput:\nWelcome Sara\nMinor"
+},
+
+{
+"id": 7,
+"question": "Write a Python program that reads two numbers and prints the larger number. If they are equal print \"Numbers are equal\".",
+"defaultCode": "a = float(input())\nb = float(input())\n\nif a > b:\n    print(a)\nelif b > a:\n    print(b)\nelse:\n    print(\"Numbers are equal\")",
+"output": "Input:\n5\n9\nOutput:\n9.0"
+},
+
+{
+"id": 8,
+"question": "Write a Python program that reads a word and checks if it starts with the letter 'A'. If yes print \"Starts with A\" otherwise print \"Does not start with A\".",
+"defaultCode": "word = input()\n\nif word.startswith(\"A\"):\n    print(\"Starts with A\")\nelse:\n    print(\"Does not start with A\")",
+"output": "Input:\nApple\nOutput:\nStarts with A"
+},
+
+{
+"id": 9,
+"question": "Write a Python program that reads a price and applies a discount. If the price is greater than 500 apply a 20% discount, otherwise apply a 10% discount. Print the final price.",
+"defaultCode": "price = float(input())\n\nif price > 500:\n    price = price - price * 0.2\nelse:\n    price = price - price * 0.1\n\nprint(f\"Final Price: {price}\")",
+"output": "Input:\n600\nOutput:\nFinal Price: 480.0"
+},
+
+{
+"id": 10,
+"question": "Write a Python program that reads a number and prints whether it is positive, negative, or zero.",
+"defaultCode": "n = float(input())\n\nif n > 0:\n    print(\"Positive\")\nelif n < 0:\n    print(\"Negative\")\nelse:\n    print(\"Zero\")",
+"output": "Input:\n-7\nOutput:\nNegative"
+},
+
+{
+"id": 11,
+"question": "Write a Python program that reads a list of three numbers and prints the maximum value using built-in functions.",
+"defaultCode": "nums = list(map(int, input().split()))\n\nprint(max(nums))",
+"output": "Input:\n3 7 2\nOutput:\n7"
+},
+
+{
+"id": 12,
+"question": "Write a Python program that reads a word and prints it in uppercase. If the word length is greater than 5 print \"Big Word\".",
+"defaultCode": "word = input()\n\nprint(word.upper())\n\nif len(word) > 5:\n    print(\"Big Word\")",
+"output": "Input:\npython\nOutput:\nPYTHON\nBig Word"
+},
+
+{
+"id": 13,
+"question": "Write a Python program that reads a number and prints its square. If the result is greater than 100 print \"Large Square\".",
+"defaultCode": "n = int(input())\nsq = n ** 2\n\nprint(sq)\n\nif sq > 100:\n    print(\"Large Square\")",
+"output": "Input:\n11\nOutput:\n121\nLarge Square"
+},
+
+{
+"id": 14,
+"question": "Write a Python program that reads a sentence and checks if the word \"Python\" exists in it.",
+"defaultCode": "sentence = input()\n\nif \"Python\" in sentence:\n    print(\"Python Found\")\nelse:\n    print(\"Python Not Found\")",
+"output": "Input:\nI love Python programming\nOutput:\nPython Found"
+},
+
+{
+"id": 15,
+"question": "Write a Python program that reads two numbers and prints their sum, product, and division result.",
+"defaultCode": "a = float(input())\nb = float(input())\n\nprint(f\"Sum: {a+b}\")\nprint(f\"Product: {a*b}\")\nprint(f\"Division: {a/b}\")",
+"output": "Input:\n6\n3\nOutput:\nSum: 9.0\nProduct: 18.0\nDivision: 2.0"
+},
+
+{
+"id": 16,
+"question": "Write a Python program that reads a username. If the username length is less than 4 print \"Username too short\" otherwise print \"Valid Username\".",
+"defaultCode": "username = input()\n\nif len(username) < 4:\n    print(\"Username too short\")\nelse:\n    print(\"Valid Username\")",
+"output": "Input:\nab\nOutput:\nUsername too short"
+},
+
+{
+"id": 17,
+"question": "Write a Python program that reads a number and checks if it is divisible by 3 and 5.",
+"defaultCode": "n = int(input())\n\nif n % 3 == 0 and n % 5 == 0:\n    print(\"Divisible by 3 and 5\")\nelse:\n    print(\"Not divisible by both\")",
+"output": "Input:\n15\nOutput:\nDivisible by 3 and 5"
+},
+
+{
+"id": 18,
+"question": "Write a Python program that reads a string and prints the first and last characters.",
+"defaultCode": "text = input()\n\nprint(text[0])\nprint(text[-1])",
+"output": "Input:\nPython\nOutput:\nP\nn"
+},
+
+{
+"id": 19,
+"question": "Write a Python program that reads two numbers and checks if the first is divisible by the second.",
+"defaultCode": "a = int(input())\nb = int(input())\n\nif a % b == 0:\n    print(\"Divisible\")\nelse:\n    print(\"Not Divisible\")",
+"output": "Input:\n10\n5\nOutput:\nDivisible"
+},
+
+{
+"id": 20,
+"question": "Write a Python program that reads a list of names separated by spaces and prints the first name and total number of names.",
+"defaultCode": "names = input().split()\n\nprint(names[0])\nprint(len(names))",
+"output": "Input:\nAli Omar Sara\nOutput:\nAli\n3"
+}
+]
+}
