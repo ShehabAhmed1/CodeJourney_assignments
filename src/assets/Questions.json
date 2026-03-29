@@ -129,5 +129,70 @@
       "defaultCode": "nums = list(map(int, input().split()))\n\nprint(max(nums))",
       "output": "Input:\n1 7 3 9 2\nOutput:\n9"
     }
+  ],
+
+  "lec2": [
+    {
+      "id": 1,
+      "question": "Write a Python program that reads a list of numbers and prints the count and sum of even numbers.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\neven_count = 0\neven_sum = 0\n\nfor n in nums:\n    if n % 2 == 0:\n        even_count += 1\n        even_sum += n\n\nprint(even_count)\nprint(even_sum)",
+      "output": "Input:\n10 25 30 45 50\nOutput:\n3\n90"
+    },
+    {
+      "id": 2,
+      "question": "Write a Python program that reads a list of numbers and prints a new list containing numbers greater than 5.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\nresult = []\n\nfor n in nums:\n    if n > 5:\n        result.append(n)\n\nprint(result)",
+      "output": "Input:\n3 7 2 9 12 5\nOutput:\n[7, 9, 12]"
+    },
+    {
+      "id": 3,
+      "question": "Write a Python program that reads a list of numbers and prints each number with its square.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\nfor n in nums:\n    print(n, n*n)",
+      "output": "Input:\n1 2 3 4\nOutput:\n1 1\n2 4\n3 9\n4 16"
+    },
+    {
+      "id": 4,
+      "question": "Write a Python program that reads a list of numbers and finds the maximum value without using max().",
+      "defaultCode": "nums = list(map(int, input().split()))\n\nmax_val = nums[0]\n\nfor n in nums:\n    if n > max_val:\n        max_val = n\n\nprint(max_val)",
+      "output": "Input:\n8 3 15 6 2\nOutput:\n15"
+    },
+    {
+      "id": 5,
+      "question": "Write a Python program that reads a list of numbers and prints a new list of their square roots.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\nresult = []\n\nfor n in nums:\n    result.append(n ** 0.5)\n\nprint(result)",
+      "output": "Input:\n4 9 16 25\nOutput:\n[2.0, 3.0, 4.0, 5.0]"
+    },
+    {
+      "id": 6,
+      "question": "Write a Python program that reads a list of numbers and prints numbers divisible by 11.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\nfor n in nums:\n    if n % 11 == 0:\n        print(n)",
+      "output": "Input:\n11 22 33 44 55\nOutput:\n11\n22\n33\n44\n55"
+    },
+    {
+      "id": 7,
+      "question": "Write a Python program that reads a list of numbers and prints their average.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\ntotal = 0\n\nfor n in nums:\n    total += n\n\navg = total / len(nums)\nprint(avg)",
+      "output": "Input:\n5 15 25 35\nOutput:\n20.0"
+    },
+    {
+      "id": 8,
+      "question": "Write a Python program that reads a list of numbers and prints the count of numbers greater than 20.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\ncount = 0\n\nfor n in nums:\n    if n > 20:\n        count += 1\n\nprint(count)",
+      "output": "Input:\n7 14 21 28\nOutput:\n2"
+    },
+    {
+      "id": 9,
+      "question": "Write a Python program that reads a list of numbers and counts how many times the number 2 appears.",
+      "defaultCode": "nums = list(map(int, input().split()))\n\ncount = 0\n\nfor n in nums:\n    if n == 2:\n        count += 1\n\nprint(count)",
+      "output": "Input:\n1 2 3 2 4 2\nOutput:\n3"
+    },
+    {
+      "id": 10,
+      "question": "Write a Python program that analyzes a list of words. The program should:\n1. Read a number n (number of words).\n2. Read n words and store them in a list.\n3. Print all words.\n4. Count how many words have length greater than 5.\n5. Find and print the longest word.\n6. Find and print the shortest word.\n7. Print all words that start with a vowel (a, e, i, o, u).\n8. Create and print a new list containing each word reversed.",
+
+      "defaultCode": "n = int(input())\n\nwords = []\n\nfor i in range(n):\n    w = input()\n    words.append(w)\n\n# Print all words\nfor w in words:\n    print(w)\n\n# Count words with length > 5\ncount = 0\nfor w in words:\n    if len(w) > 5:\n        count += 1\n\nprint(\"Count > 5:\", count)\n\n# Longest and shortest\nlongest = words[0]\nshortest = words[0]\n\nfor w in words:\n    if len(w) > len(longest):\n        longest = w\n    if len(w) < len(shortest):\n        shortest = w\n\nprint(\"Longest:\", longest)\nprint(\"Shortest:\", shortest)\n\n# Words starting with vowel\nprint(\"Starts with vowel:\")\n\nfor w in words:\n    if w[0].lower() in ['a', 'e', 'i', 'o', 'u']:\n        print(w)\n\n# Reversed list\nreversed_words = []\n\nfor w in words:\n    reversed_words.append(w[::-1])\n\nprint(\"Reversed words:\", reversed_words)",
+
+      "output": "Input:\nEnter number of words: 4\nword1: apple\nword2: banana\nword3: orange\nword4: sky\n\nOutput:\napple\nbanana\norange\nsky\nCount > 5: 2\nLongest: banana\nShortest: sky\nStarts with vowel:\napple\norange\nReversed words: ['elppa', 'ananab', 'egnaro', 'yks']"
+    }
   ]
 }
